@@ -1,0 +1,97 @@
+* {margin:0; padding:0;}
+
+article, section, main, nav, aside, footer, header
+{
+	display:block;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+header 
+{
+	height: 100%;
+	width: 100%;
+}
+
+
+footer 
+{
+	height: 100%;
+	width: 100%;
+	color: #660066;
+}
+
+main
+{
+	width: 100%;
+	height: 100%;
+}
+
+footer a
+{
+	font-size: 10px;
+	text-decoration: none;
+}
+
+nav a
+{
+	text-decoration: none;
+	background: url(../images/bgr.jpg) no-repeat;
+	background-size: cover;
+	color: #CCF5F5;
+	font: 15px Arial;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+nav a:hover
+{
+	color:#FFFFFF;
+	text-decoration: underline;
+}
+
+.articleMain p
+{
+	font: 14px Verdana;
+	color:#0900A2;
+}
+
+.articleSecondary p.paraHistory
+{
+	font: 10px sans-serif;
+	color:#A140A2;
+	margin-bottom: 15px;
+}
+
+.articleSecondary p.paraConcept
+{
+	font: 12px Mangal;
+	color:#006600;
+	margin-bottom: 15px;
+}
+
+.inlineText
+{
+	display: inline;
+}
+
+#logo 
+{
+	display: block;
+	background: url(../images/logo.png);
+	width: 230px;
+	height: 230px;
+	margin: 20px;
+}
+
+#starsImg
+{
+	display: block;
+	background: url(../images/stars.gif);
+	width: 500px;
+	height: 281px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
