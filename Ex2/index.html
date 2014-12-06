@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Elad Chervoni</title>
+	</head>
+	<body>	
+		<header></header>
+		
+		<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+			<label>Full Name:
+				<input type="text" name="fullName" value="">
+				<input type="submit" value="Submit">
+			</label><br>
+			<label>Password:<input type="password" name="pas" maxlength="8"></label><br>
+			<label>Email:<input type="email" name="mail"></label><br>
+			<label>Website:<input type="url" name="website"></label><br>
+			<label>Phone:<input type="tel" name="phone"></label><br>
+			<label>Amount of coffee you drink a day:<input type="number" name="coffee"></label><br>
+			<label>The temperature now is:<input type="number" name="temper"></label><br>
+			<label>Address:<textarea name="address" rows="3"></textarea></label><br>
+			<h3>Interests: </h3>
+			<label>Video Games: <input type="checkbox" name="interests[]" value="Video Games"></label><br>
+			<label>Movies:<input type="checkbox" name="interests[]" value="Movies"></label><br>
+			<label>Books:<input type="checkbox" name="interests[]" value="Books"></label><br>
+			<label>Sports:<input type="checkbox" name="interests[]" value="Sports"></label><br>
+			<h2>Gender:</h2>
+			<label>Male <input type="radio" name="gender" value="male"></label><br>
+			<label>Female <input type="radio" name="gender" value="female"></label><br>
+			<label>Select your age:
+				<select name="age">
+					<option value="1">18-29</option>
+					<option value="2" selected>30-39</option>
+					<option value="3">40-49</option>
+					<option value="4">50+</option>
+			</label>
+			<label>What is your favorite animal?
+				<input type="text" list="anim" name="animals">
+				<datalist id="anim">
+					<option value="1" label="Lion">
+					<option value="2" label="Eagle">
+					<option value="3" label="Cat">
+					<option value="4" label="Dog">
+					<option value="5" label="Dolphin">			
+				</datalist>
+			</label>
+		</form>
+		
+		<footer></footer>
+	</body>
+</html>
