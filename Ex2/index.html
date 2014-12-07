@@ -11,48 +11,41 @@
 		<section class="fallingObject object3"></section>
 		<section class="fallingObject object4"></section>
 		<section class="fallingObject object5"></section>
-		<div id="wrapper" class="shake">
+		<div id="wrapper">
 			<header>
 				<h1>QUAKE ALERTS</h1>
-			</header>		
-
+			</header>
 			<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
 				<section class="leftFormSection">
-					<p>
-						<label>Full Name:<br><input type="text" name="fullName" value=""></label>
-					</p>
-					<p>
-						<label>Password:<br><input type="password" name="pas" maxlength="8"></label>
-					</p>
-					<p>
-						<label>Email:<br><input type="email" name="mail"></label>
-					</p>
-					<p>
-						<label>Website:<br><input type="url" name="website"></label>
-					</p>
-					<p>
-						<label>Phone:<br><input type="tel" name="phone"></label>
-					</p>
-					<label>Amount of coffee you drink a day:<br><input type="number" name="coffee"></label><br>
-					<label>The temperature now is:<br><input type="number" name="temper"></label><br>
-					<label>Address:<br><textarea name="address" rows="3"></textarea></label><br>
-					<h3>Interests: </h2>
-					<label>Video Games: <input type="checkbox" name="interests[]" value="Video Games"></label><br>
-					<label>Movies:<input type="checkbox" name="interests[]" value="Movies"></label><br>
-					<label>Books:<input type="checkbox" name="interests[]" value="Books"></label><br>
-					<label>Sports:<input type="checkbox" name="interests[]" value="Sports"></label><br>
-					<h2>Gender:</h2>
-					<label>Male <input type="radio" name="gender" value="male"></label><br>
-					<label>Female <input type="radio" name="gender" value="female"></label><br>
-					<label>Select your age:
-						<select name="age">
-							<option value="1">18-29</option>
-							<option value="2" selected>30-39</option>
-							<option value="3">40-49</option>
-							<option value="4">50+</option>
+					<label>Full Name:<br><input type="text" name="fullName" value=""></label><br>
+					<label>Email:<br><input type="email" name="mail"></label><br>
+					<label>Password:<br><input type="password" name="pas" maxlength="8"></label><br>
+					<label>Website:<br><input type="url" name="website"></label><br>
+					<label>Age:<select name="age">
+						<option value="1" selected>18-29</option>
+						<option value="2">30-39</option>
+						<option value="3">40-49</option>
+						<option value="4">50+</option></select>
 					</label><br>
-					<label>What is your favorite animal?<br>
-						<input type="text" list="anim" name="animals">
+					<label>Phone:<br><input type="tel" name="phone"></label><br>
+					<label>Address:<br><textarea name="address" rows="3"></textarea></label><br>
+					
+				</section>
+				<section class="rightFormSection">
+					<fieldset>
+						<legend>Interests</legend>
+						<label><input type="checkbox" name="interests[]" value="Video Games">Video Games</label>
+						<label><input type="checkbox" name="interests[]" value="Movies">Movies</label>
+						<label><input type="checkbox" name="interests[]" value="Books">Books</label>
+						<label><input type="checkbox" name="interests[]" value="Sports">Sports</label>
+					</fieldset>
+					<fieldset>
+						<legend>Gender</legend>
+						<label><input type="radio" name="gender" value="male">Male</label><br>
+						<label><input type="radio" name="gender" value="female">Female</label><br>
+					</fieldset>
+					
+					<label>What is your favorite animal?<input type="text" list="anim" name="animals">
 						<datalist id="anim">
 							<option value="1" label="Lion">
 							<option value="2" label="Eagle">
@@ -60,9 +53,11 @@
 							<option value="4" label="Dog">
 							<option value="5" label="Dolphin">			
 						</datalist>
-					</label>
+					</label><br>
+					<label>Amount of coffee you drink a day:<br><input type="number" name="coffee"></label><br>
+					<label>The temperature now is:<br>10km<input type="range" name="temper" value="10" min="10" max="1000">1000km</label><br>
 				</section>
-				<section class="rightFormSection">
+				<section class="rightFormSection shake">
 					<input type="submit" id="submitButton" value="">
 				</section>
 				<div class="clear"></div>
