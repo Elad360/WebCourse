@@ -7,7 +7,7 @@ article, section, main, nav, aside, footer, header
 
 body
 {
-	background: linear-gradient(#214200 0%, #5C3D00 15%, #2E1F00 95%, #CC3300 100%);
+	background: linear-gradient(#214200 0%, #5C3D00 15%, #2E1F00 95%, #CC3300 100%) no-repeat;
 }
 
 ::-webkit-scrollbar 
@@ -62,30 +62,37 @@ main
  
 input, textarea, select
 {
-    font: 15px 'BazarMedium';
+    font: 20px 'BazarMedium';
     color: #2E1F00;
 	border: solid;
 	border-color: #D7CEB2;
 	width: 200px;
-	height: 20px;
+	height: 30px;
 	background-color: #f4dda3;
-	border-radius: 5px;		
+	border-radius: 5px;	
+	margin-top: 5px;
+	margin-bottom: 5px;	
 }
 
-input, textarea, select, label, fieldset, h1
+/*input, textarea, select, label, fieldset, h1
 {
 	-webkit-animation-name: shakeAnimation;
 	-webkit-animation-duration: 0.8s;
 	-webkit-transform-origin: 50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+}*/
+
+fieldset
+{
+	margin-left: 40px;
 }
 
 #wrapper
 {
 	margin: 0px auto;
 	width: 1004px;
-	height: 2000px;
+	height: 100%;
 }
 
 .clear 
@@ -166,17 +173,21 @@ input, textarea, select, label, fieldset, h1
     -webkit-animation-delay: 0.2s;
 }
 
-#submitButton
+#PersonalInfo
 {
 	width: 200px;
-    height: 200px;
+}
+
+#submitButton
+{
+	width: 150px;
+    height: 150px;
     border-radius: 50%;
 	background: url(../images/arrow.png) no-repeat;
 	background-size: contain;
 	-webkit-animation: spinAnimation 1s infinite linear;
 	-webkit-animation-play-state: running;	
-	margin: 0px auto;
-	display: block;
+	margin-left: 30px;
 }
 
 #submitButton:hover
@@ -197,35 +208,23 @@ input, textarea, select, label, fieldset, h1
 	100% { -webkit-transform: rotate(10deg); background-color: #EBE0CC;}
 }
 
-@-webkit-keyframes shakeAnimation {
+@-webkit-keyframes shakeAnimation 
+{
 	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
 	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	20% { -webkit-transform: translate(-2px, 0px) rotate(1deg); }
 	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
 	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
 	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	60% { -webkit-transform: translate(-2px, 1px) rotate(0deg); }
 	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
 	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@-webkit-keyframes shakeAnimationDontMove {
-	0% { -webkit-transform: rotate(0deg); }
-	10% { -webkit-transform: rotate(-1deg); }
-	20% { -webkit-transform: rotate(1deg); }
-	30% { -webkit-transform: rotate(0deg); }
-	40% { -webkit-transform: rotate(1deg); }
-	50% { -webkit-transform: rotate(-1deg); }
-	60% { -webkit-transform: rotate(0deg); }
-	70% { -webkit-transform: rotate(-1deg); }
-	80% { -webkit-transform: rotate(1deg); }
-	90% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(-1deg); }
-}
-
-.shake {
+.shake 
+{
 	display:inline-block;
 	-webkit-animation-name: shakeAnimation;
 	-webkit-animation-duration: 0.8s;

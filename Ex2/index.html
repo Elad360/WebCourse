@@ -17,45 +17,54 @@
 			</header>
 			<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
 				<section class="leftFormSection">
-					<label>Full Name:<br><input type="text" name="fullName" value=""></label><br>
-					<label>Email:<br><input type="email" name="mail"></label><br>
-					<label>Password:<br><input type="password" name="pas" maxlength="8"></label><br>
-					<label>Website:<br><input type="url" name="website"></label><br>
-					<label>Age:<select name="age">
-						<option value="1" selected>18-29</option>
-						<option value="2">30-39</option>
-						<option value="3">40-49</option>
-						<option value="4">50+</option></select>
-					</label><br>
-					<label>Phone:<br><input type="tel" name="phone"></label><br>
-					<label>Address:<br><textarea name="address" rows="3"></textarea></label><br>
-					
+					<fieldset id="PersonalInfo">
+						<legend>Personal Info</legend>
+						<label>Full Name:<br><input type="text" name="fullName" value=""></label><br>
+						<label>Email:<br><input type="email" name="mail"></label><br>
+						<label>Password:<br><input type="password" name="pas" maxlength="8"></label><br>
+						<label>Website:<br><input type="url" name="website"></label><br>
+						<label>Age:<select name="age">
+							<option value="1" selected>18-29</option>
+							<option value="2">30-39</option>
+							<option value="3">40-49</option>
+							<option value="4">50+</option></select>
+						</label><br>
+						<label>Phone:<br><input type="tel" name="phone"></label><br>
+						<label>Address:<br><textarea name="address" rows="3"></textarea></label><br>
+					</fieldset>
 				</section>
-				<section class="rightFormSection">
+				<section class="rightFormSection">					
 					<fieldset>
-						<legend>Interests</legend>
-						<label><input type="checkbox" name="interests[]" value="Video Games">Video Games</label>
-						<label><input type="checkbox" name="interests[]" value="Movies">Movies</label>
-						<label><input type="checkbox" name="interests[]" value="Books">Books</label>
-						<label><input type="checkbox" name="interests[]" value="Sports">Sports</label>
+						<legend>When to alert?</legend>
+						<label><input type="radio" name="gender" value="male">Before</label><br>
+						<label><input type="radio" name="gender" value="female">After</label><br>
+					</fieldset>
+					<fieldset>						
+						<legend>What for?</legend>
+						<input type="text" list="anim" name="animals">
+							<datalist id="anim">
+								<option value="1" label="Safety">
+								<option value="2" label="Research">
+								<option value="3" label="Study">
+								<option value="4" label="Dog">
+								<option value="5" label="Just curious">			
+							</datalist>
 					</fieldset>
 					<fieldset>
-						<legend>Gender</legend>
-						<label><input type="radio" name="gender" value="male">Male</label><br>
-						<label><input type="radio" name="gender" value="female">Female</label><br>
+						<legend>How strong?</legend>
+						<input type="number" name="coffee" value="1" min="1" max="10"> magnitude
+					</fieldset>					
+					<fieldset>
+						<legend>How far?</legend>
+						<label>10km<input type="range" name="temper" value="10" min="10" max="1000">1000km</label>
 					</fieldset>
-					
-					<label>What is your favorite animal?<input type="text" list="anim" name="animals">
-						<datalist id="anim">
-							<option value="1" label="Lion">
-							<option value="2" label="Eagle">
-							<option value="3" label="Cat">
-							<option value="4" label="Dog">
-							<option value="5" label="Dolphin">			
-						</datalist>
-					</label><br>
-					<label>Amount of coffee you drink a day:<br><input type="number" name="coffee"></label><br>
-					<label>The temperature now is:<br>10km<input type="range" name="temper" value="10" min="10" max="1000">1000km</label><br>
+					<fieldset>
+						<legend>What else?</legend>
+						<label><input type="checkbox" name="interests[]" value="Video Games">Tsunami</label>
+						<label><input type="checkbox" name="interests[]" value="Movies">Tornado</label>
+						<label><input type="checkbox" name="interests[]" value="Books">Flood</label>
+						<label><input type="checkbox" name="interests[]" value="Sports">Fire</label>
+					</fieldset>
 				</section>
 				<section class="rightFormSection shake">
 					<input type="submit" id="submitButton" value="">
