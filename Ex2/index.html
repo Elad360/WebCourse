@@ -19,9 +19,11 @@
 				<section class="leftFormSection">
 					<fieldset id="PersonalInfo">
 						<legend>Personal Info</legend>
-						<label>Full Name:<br><input type="text" name="fullName" value=""></label><br>
-						<label>Email:<br><input type="email" name="mail"></label><br>
-						<label>Password:<br><input type="password" name="pas" maxlength="8"></label><br>
+						<label>Full Name:*<br><input type="text" required name="fullName" value=""></label><br>
+						<label>Email:*<br><input type="email" required name="mail"></label><br>
+						<label>Password:*<br>
+							<input type="password" required pattern="[0-9][0-9][0-9][0-9][0-9][0-9]" title="Password must contain 6 digits with values between 0 and 9" name="pas" maxlength="6">
+						</label><br>
 						<label>Website:<br><input type="url" name="website"></label><br>
 						<label>Age:<select name="age">
 							<option value="1" selected>18-29</option>
@@ -36,7 +38,7 @@
 				<section class="rightFormSection">					
 					<fieldset>
 						<legend>When to alert?</legend>
-						<label><input type="radio" name="gender" value="male">Before</label><br>
+						<label><input type="radio" checked name="gender" value="male">Before</label><br>
 						<label><input type="radio" name="gender" value="female">After</label><br>
 					</fieldset>
 					<fieldset>						
@@ -46,8 +48,7 @@
 								<option value="1" label="Safety">
 								<option value="2" label="Research">
 								<option value="3" label="Study">
-								<option value="4" label="Dog">
-								<option value="5" label="Just curious">			
+								<option value="4" label="Just curious">			
 							</datalist>
 					</fieldset>
 					<fieldset>
@@ -67,12 +68,11 @@
 					</fieldset>
 				</section>
 				<section class="rightFormSection shake">
-					<input type="submit" id="submitButton" value="">
+					<input type="submit" id="submitButton" value="SUBMIT" formtarget="_blank">
 				</section>
 				<div class="clear"></div>
 			</form>
 			<footer></footer>
-		</div>
-		
+		</div>		
 	</body>
 </html>
