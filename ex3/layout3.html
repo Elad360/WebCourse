@@ -3,23 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Layout Three</title>
+		<script src="includes/jquery-2.1.1.min.js"></script>
+		<script src="includes/functionality.js"></script>			
 		<link href="includes/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="wrapper">
-			<header>
+			<header id="thirdLayoutHeader">
 				<nav>
 					<a href="index.html">Layout 1</a>
 					<a href="layout2.html">Layout 2</a>
 					<a href="layout3.html">Layout 3</a>
 				</nav>			
 			</header>
-			<main>
-				<section class="box" id="boxOne"></section>
-				<section class="box" id="boxTwo"></section>
-				<section class="box" id="boxThree"></section>
+			<main id="thirdLayoutMain">
+				<p id="controlPanel">
+					<input type="button" value="+" id="addBox">
+					<input type="button" value="-" id="removeBox">
+				</p>
 			</main>
-			<div class="clear"></div>
 			<footer></footer>
 		</div>		
 	</body>
