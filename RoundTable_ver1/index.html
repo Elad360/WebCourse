@@ -3,17 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Round Table</title>
+        <script src="includes/jquery-2.1.1.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<link href="includes/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
 				<a href="index.html" id="logo"></a>
-				<section class="form-group"  id="search">
-					<input type="text" class="form-control" id="searchInput">
-					<button type="button" class="btn" id="searchBtn"></button>
-				</section>
+                <form class="navbar-search" id="search">
+                    <input type="text" id="searchInput" class="search-query" placeholder="Restaurant or city">
+                    <button type="button" class="btn" id="searchBtn"></button>
+                </form>
 				<section id="connectedUserArea">
 					<section class="img-circle" id="userImg"></section>
 					<section class="btn-group" id="userInfo">
@@ -28,10 +30,80 @@
 						    <li><a href="#">Log out</a></li>
 					  	</ul>
 					</section>
-				</section>
+				</section>                
 			</header>
 			<main>
-				
+				<ul class="nav nav-list">
+                    <li class="divider" id="dividerThick"></li>
+                </ul>
+                
+                <section id="resultListTitleBar">
+                    <label>Top restaurants in Tel Aviv</label>
+                </section>
+                
+                <section id="filterSortBar">
+                    <button type="button" class="btn filterSortBtn" id="filterSmile"></button>
+                    <button type="button" class="btn filterSortBtn" id="filterCuisine"></button>
+                    <button type="button" class="btn filterSortBtn" id="filterMap"></button>
+                    <ul class="nav left">
+                        <li class="divider-vertical" id="dividerVertical"></li>
+                    </ul>
+                    <button type="button" class="btn filterSortBtn" id="sortMenuBtn"></button>
+                    <section class="left" id="ratingTitle">
+                        <label>Rating - low to high</label>
+                    </section>
+                </section>
+                
+                <section id="restaurantSection">
+                    <label id="restaurantLabel">Taizu</label>
+                    <label id="restaurantAddress">23 Menahem Begin Rd., Tel Aviv, Israel</label>
+                    <button type="button" class="btn" id="pinBtn"></button>
+                    <button type="button" class="btn" id="websiteLinkBtn"></button>
+                    <button type="button" class="btn" id="shareBtn"></button>
+                    <button type="button" class="btn" id="addToWishlistBtn"></button>
+                    <label id="totalRatingScore">9.5</label>
+                    <button type="button" class="btn" id="happyBtn"></button>
+                    <button type="button" class="btn" id="sadBtn"></button>
+                    <label id="dislikesLabel">21</label>
+                    <label id="likesLabel">532</label>
+                    <section id="advancedRatingArea">
+                        <section>
+                            <label class="left">Food</label>
+                            <section class="progress left" id="foodRatingBar">
+                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                            </section>
+                            <label class="left">9.5</label>
+                        </section>
+                        <div class="clear"></div>
+                        <section>
+                            <label class="left">Service</label>
+                            <section class="progress left" id="serviceRatingBar">
+                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                            </section>
+                            <label class="left">9.5</label>
+                        </section>
+                        <div class="clear"></div>
+                        <section>
+                            <label class="left">Price</label>
+                            <section class="progress left" id="priceRatingBar">
+                                <section class="progress-bar" role="progressbar" style="width: 90%;"></section>
+                            </section>
+                            <label class="left">9.0</label>
+                        </section>
+                        <div class="clear"></div>
+                        <section>
+                            <label class="left">Atmosphere</label>
+                            <section class="progress left" id="atmosphereRatingBar">
+                                <section class="progress-bar" role="progressbar" style="width: 100%;"></section>
+                            </section>
+                            <label class="left">10</label>
+                        </section>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="restaurantCuisines">
+                        <label id="cuisineInstance">Asian</label>
+                    </section>
+                </section>
 			</main>
 			
 			<footer></footer>
