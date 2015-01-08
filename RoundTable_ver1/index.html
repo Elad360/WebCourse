@@ -3,15 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Round Table</title>
-        <script src="includes/jquery-2.1.1.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<link href="includes/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
-				<a href="index.html" id="logo"></a>
+				<a href="index.html" class="logo" id="mainLogo"></a>
                 <form class="navbar-search" id="search">
                     <input type="text" id="searchInput" class="search-query" placeholder="Restaurant or city">
                     <button type="button" class="btn" id="searchBtn"></button>
@@ -32,11 +31,8 @@
 					</section>
 				</section>                
 			</header>
-			<main>
-				<ul class="nav nav-list">
-                    <li class="divider" id="dividerThick"></li>
-                </ul>
-                
+			
+            <main>                
                 <section id="resultListTitleBar">
                     <label>Top restaurants in Tel Aviv</label>
                 </section>
@@ -61,7 +57,7 @@
                     <button type="button" class="btn" id="websiteLinkBtn"></button>
                     <button type="button" class="btn" id="shareBtn"></button>
                     <button type="button" class="btn" id="addToWishlistBtn"></button>
-                    <label id="totalRatingScore">9.5</label>
+                    <label class="ratingScore" id="totalRatingScore">9.5</label>
                     <button type="button" class="btn" id="happyBtn"></button>
                     <button type="button" class="btn" id="sadBtn"></button>
                     <label id="dislikesLabel">21</label>
@@ -71,7 +67,7 @@
                         <section>
                             <label class="left">Food</label>
                             <section class="progress left" id="foodRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -79,7 +75,7 @@
                         <section>
                             <label class="left">Service</label>
                             <section class="progress left" id="serviceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -87,7 +83,7 @@
                         <section>
                             <label class="left">Price</label>
                             <section class="progress left" id="priceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 90%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 90%;"></section>
                             </section>
                             <label class="left">9.0</label>
                         </section>
@@ -95,7 +91,7 @@
                         <section>
                             <label class="left">Atmosphere</label>
                             <section class="progress left" id="atmosphereRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 100%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 100%;"></section>
                             </section>
                             <label class="left">10</label>
                         </section>
@@ -104,7 +100,7 @@
                     <section id="restaurantCuisines">
                         <label id="cuisineInstance">Asian</label>
                     </section>
-                    <img id="userPhotos" src="http://images.mouse.co.il/storage/3/8/b-%20Taizu.jpg" class="img-thumbnail" alt="User photos">
+                    <img id="userPhotos" src="images/taizu.jpg" class="img-thumbnail" alt="User photos">
                     <section id="rateBtnSection">
                         <button type="button" class="btn" id="rateBtn"></button>
                         <label>RATE!</label>
@@ -122,7 +118,7 @@
                     <button type="button" class="btn" id="websiteLinkBtn"></button>
                     <button type="button" class="btn" id="shareBtn"></button>
                     <button type="button" class="btn" id="addToWishlistBtn"></button>
-                    <label id="totalRatingScore">9.5</label>
+                    <label class="ratingScore" id="totalRatingScore">9.5</label>
                     <button type="button" class="btn" id="happyBtn"></button>
                     <button type="button" class="btn" id="sadBtn"></button>
                     <label id="dislikesLabel">21</label>
@@ -132,7 +128,7 @@
                         <section>
                             <label class="left">Food</label>
                             <section class="progress left" id="foodRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -140,7 +136,7 @@
                         <section>
                             <label class="left">Service</label>
                             <section class="progress left" id="serviceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -148,7 +144,7 @@
                         <section>
                             <label class="left">Price</label>
                             <section class="progress left" id="priceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 90%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 90%;"></section>
                             </section>
                             <label class="left">9.0</label>
                         </section>
@@ -156,7 +152,7 @@
                         <section>
                             <label class="left">Atmosphere</label>
                             <section class="progress left" id="atmosphereRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 100%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 100%;"></section>
                             </section>
                             <label class="left">10</label>
                         </section>
@@ -165,7 +161,7 @@
                     <section id="restaurantCuisines">
                         <label id="cuisineInstance">Asian</label>
                     </section>
-                    <img id="userPhotos" src="http://images.mouse.co.il/storage/3/8/b-%20Taizu.jpg" class="img-thumbnail" alt="User photos">
+                    <img id="userPhotos" src="images/taizu.jpg" class="img-thumbnail" alt="User photos">
                     <section id="rateBtnSection">
                         <button type="button" class="btn" id="rateBtn"></button>
                         <label>RATE!</label>
@@ -182,7 +178,7 @@
                     <button type="button" class="btn" id="websiteLinkBtn"></button>
                     <button type="button" class="btn" id="shareBtn"></button>
                     <button type="button" class="btn" id="addToWishlistBtn"></button>
-                    <label id="totalRatingScore">9.5</label>
+                    <label class="ratingScore" id="totalRatingScore">9.5</label>
                     <button type="button" class="btn" id="happyBtn"></button>
                     <button type="button" class="btn" id="sadBtn"></button>
                     <label id="dislikesLabel">21</label>
@@ -192,7 +188,7 @@
                         <section>
                             <label class="left">Food</label>
                             <section class="progress left" id="foodRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -200,7 +196,7 @@
                         <section>
                             <label class="left">Service</label>
                             <section class="progress left" id="serviceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 95%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 95%;"></section>
                             </section>
                             <label class="left">9.5</label>
                         </section>
@@ -208,7 +204,7 @@
                         <section>
                             <label class="left">Price</label>
                             <section class="progress left" id="priceRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 90%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 90%;"></section>
                             </section>
                             <label class="left">9.0</label>
                         </section>
@@ -216,7 +212,7 @@
                         <section>
                             <label class="left">Atmosphere</label>
                             <section class="progress left" id="atmosphereRatingBar">
-                                <section class="progress-bar" role="progressbar" style="width: 100%;"></section>
+                                <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 100%;"></section>
                             </section>
                             <label class="left">10</label>
                         </section>
@@ -225,17 +221,48 @@
                     <section id="restaurantCuisines">
                         <label id="cuisineInstance">Asian</label>
                     </section>
-                    <img id="userPhotos" src="http://images.mouse.co.il/storage/3/8/b-%20Taizu.jpg" class="img-thumbnail" alt="User photos">
+                    <img id="userPhotos" src="images/taizu.jpg" class="img-thumbnail" alt="User photos">
                     <section id="rateBtnSection">
                         <button type="button" class="btn" id="rateBtn"></button>
                         <label>RATE!</label>
                     </section>
-                </section>
-                
-                
+                </section>                
 			</main>
 			
-			<footer></footer>
+            
+            <nav id="paginationSection">
+                <ul class="pagination right">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>            
+            <div class="clear"></div>
+            
+			<footer>
+                <a href="index.html" class="logo" id="footerLogo"></a>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThinFooter"></li>
+                </ul>
+                <section id="footerLinks">
+                    <a href="#">About Us </a>
+                    <a href="#">Site Map </a>
+                    <a href="#">Help and FAQ</a>
+                </section>
+                <label id="footerRightsLabel">© 2014 Round Table All rights reserved.</label>
+            </footer>
 		</div>		
 	</body>
 </html>
