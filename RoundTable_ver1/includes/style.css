@@ -305,6 +305,7 @@ label
 #advancedRatingArea
 {
     position: absolute;
+    width: 250px;
     left: 160px;
     top: 58px;
 }
@@ -355,4 +356,29 @@ label
     border-radius: 12%;
 	border: 1px solid #000000;
     opacity: 0.8;
+}
+
+#userPhotos
+{
+    position: absolute;
+    height: 120px;
+    width: 260px;
+    top: 58px;
+    left: 420px;    
+}
+
+#rateBtnSection
+{
+    position: absolute;
+    width: 100px;
+    top: 58px;
+    left: 846px;
+}
+
+#rateBtn
+{
+    background: url(../images/rate.png) no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
 }
