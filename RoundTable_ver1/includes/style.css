@@ -542,6 +542,22 @@ label
     width: 48px;
 }
 
+#userImg3
+{
+    background: url(../images/person4.jpg) no-repeat center center;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+
+#userImg4
+{
+    background: url(../images/person5.jpg) no-repeat center center;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+
 .ratingScoreSection
 {
     text-align: center;
@@ -561,3 +577,93 @@ label
     opacity: 0.8;
 }
 
+
+
+
+#restaurantTitleSection
+{
+    position: relative;
+    height: 50px;
+    font-family: 'Cinzel', serif;
+}
+
+.ratingSection
+{
+    font-family: 'Cinzel', serif;
+    position: relative;
+    height: 100px;
+    width: 950px;
+    margin: 0px auto;
+}
+
+.ratingAreaLabel
+{
+   position: absolute;
+    top: 10px;
+}
+.ratingBarSection
+{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#badRatingBtn
+{
+    position: absolute;
+    background: url(../images/sad44.png) no-repeat center center;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#goodRatingBtn
+{
+    position: absolute;
+    background: url(../images/happy.png) no-repeat center center;
+    right: 50%;
+    margin-right: -250px;
+    top: 50%;
+    margin-top: -10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+.ratingResult
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 50px;
+}
+
+.reviewArea
+{
+    position: absolute;
+    top: 35px;
+    width: 80%;
+    height: 100px;
+}
+
+.photo
+{
+    position: absolute;
+    top: 35px;
+    width: 90px;
+    left: 100px;
+}
+
+.submitBtn
+{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+}

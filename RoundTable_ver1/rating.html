@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Round Table</title>
+        <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link href="includes/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<a href="index.html" class="logo" id="mainLogo"></a>
+                <form class="navbar-search" id="search">
+                    <input type="text" id="searchInput" class="search-query" placeholder="Restaurant or city">
+                    <button type="button" class="btn" id="searchBtn"></button>
+                </form>
+				<section id="connectedUserArea">
+					<section class="img-circle" id="userImg"></section>
+					<section class="btn-group" id="userInfo">
+						<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+					    	Greetings, Gilad <span class="caret"></span>
+					    </button>
+					  	<ul class="dropdown-menu" role="menu">
+					    	<li><a href="#">Account Settings</a></li>
+	    					<li><a href="#">My Reviews</a></li>
+						    <li><a href="#">My Wishlist</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#">Log out</a></li>
+					  	</ul>
+					</section>
+				</section>                
+			</header>
+			
+            <main>               
+               
+                
+                <section id="restaurantTitleSection">
+                    <label id="restaurantLabel">Taizu</label>
+                    <label id="restaurantAddress">23 Menahem Begin Rd., Tel Aviv, Israel</label>
+                    </section>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThin"></li>
+                </ul>
+                
+                <section class="ratingSection">
+                    <label class="ratingAreaLabel">Overall rating</label>
+                    <button type="button" class="btn" id="badRatingBtn"></button>
+                    <section class="ratingBarSection">
+                        <section class="progress">
+                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 50%;"></section>
+                        </section>
+                    </section>
+                    <button type="button" class="btn" id="goodRatingBtn"></button>
+                    <label class="reviewRatingScore ratingResult">5.0</label>
+                </section>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThin"></li>
+                </ul>
+                
+                <section class="ratingSection">
+                    <label class="ratingAreaLabel">Advanced rating (oprional)</label>
+                    <button type="button" class="btn" id="badRatingBtn"></button>
+                    <section class="ratingBarSection">
+                        <section class="progress">
+                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 50%;"></section>
+                        </section>
+                    </section>
+                    <button type="button" class="btn" id="goodRatingBtn"></button>
+                    <label class="reviewRatingScore ratingResult">5.0</label>
+                </section>
+                <section class="ratingSection">
+                    <button type="button" class="btn" id="badRatingBtn"></button>
+                    <section class="ratingBarSection">
+                        <section class="progress">
+                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 50%;"></section>
+                        </section>
+                    </section>
+                    <button type="button" class="btn" id="goodRatingBtn"></button>
+                    <label class="reviewRatingScore ratingResult">5.0</label>
+                </section>
+                <section class="ratingSection">
+                    <button type="button" class="btn" id="badRatingBtn"></button>
+                    <section class="ratingBarSection">
+                        <section class="progress">
+                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 50%;"></section>
+                        </section>
+                    </section>
+                    <button type="button" class="btn" id="goodRatingBtn"></button>
+                    <label class="reviewRatingScore ratingResult">5.0</label>
+                </section>
+                <section class="ratingSection">
+                    <button type="button" class="btn" id="badRatingBtn"></button>
+                    <section class="ratingBarSection">
+                        <section class="progress">
+                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: 50%;"></section>
+                        </section>
+                    </section>
+                    <button type="button" class="btn" id="goodRatingBtn"></button>
+                    <label class="reviewRatingScore ratingResult">5.0</label>
+                </section>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThin"></li>
+                </ul>
+                
+                
+                <section class="ratingSection">
+                    <label class="ratingAreaLabel">Your review (optional)</label>
+                    <textarea class="form-control reviewArea" rows="2" id="comment"></textarea>
+                </section>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThin"></li>
+                </ul>
+                
+                <section class="ratingSection">
+                    <label class="ratingAreaLabel">Share photos (optional)</label>
+                    <img src="images/taizu.jpg" class="img-thumbnail photo">
+                
+                    </section>
+                
+               <section class="ratingSection">
+                   <a href="index.html" class="btn submitBtn">SUBMIT</a>
+                </section>
+                                   
+             
+			</main>
+			
+            
+            <nav id="paginationSection">
+                <ul class="pagination right">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>            
+            <div class="clear"></div>
+            
+			<footer>
+                <a href="index.html" class="logo" id="footerLogo"></a>
+                <ul class="nav nav-list">
+                    <li class="divider" id="dividerThinFooter"></li>
+                </ul>
+                <section id="footerLinks">
+                    <a href="#">About Us </a>
+                    <a href="#">Site Map </a>
+                    <a href="#">Help and FAQ</a>
+                </section>
+                <label id="footerRightsLabel">© 2014 Round Table All rights reserved.</label>
+            </footer>
+		</div>		
+	</body>
+</html>
