@@ -1,0 +1,638 @@
+body
+{
+	background-color: #FFF7EA;
+}
+
+#wrapper
+{
+	margin: 0px auto;
+	width: 1000px;
+}
+
+header
+{	
+	position: relative;
+	height: 150px;
+	width: 100%;
+    background-color: #332312;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+
+main
+{    
+    background-color: #E8DDCC;
+    box-shadow: 0px 0px 6px 0px #332312;
+}
+
+footer
+{
+    position: relative;
+    height: 170px;
+    width: 100%;
+    background-color: #332312;
+    box-shadow: 0px 0px 8px 0px #000000;
+}
+
+label
+{
+    opacity: 0.9;
+}
+
+.clear 
+{
+	clear: both;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.logo
+{
+    position: absolute;
+	display: block;
+	background: url(../images/logo.png) no-repeat center center;
+	background-size: contain;
+	width: 120px;
+	height: 120px;
+    left: 50%;
+	margin-left: -500px;
+	top: 50%;
+	margin-top: -60px;
+}
+
+footer > .logo
+{
+    width: 60px;
+	height: 60px;
+    left: 50%;
+    margin-left: -30px;
+	top: 10px;
+	margin-top: 0;
+}
+
+footer .dividerThin
+{
+    background-color: #FFFFFF;
+    top: 85px;
+    left: 0;
+    height: 1px;
+    width: 970px;
+    margin: 0px auto;
+    opacity: 0.8;
+}
+
+#footerLinks
+{
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#footerLinks > a
+{
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#footerRightsLabel
+{
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    margin-left: -90px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+}
+
+header > .navbar-search 
+{
+	position: absolute;
+	width: 380px;
+	left: 50%;
+	margin-left: -170px;
+	top: 50%;
+	margin-top: -17px;
+}
+
+header .search-query 
+{
+    font-family: 'Cinzel', serif;
+	width: 340px;
+	height: 34px;
+    padding-left: 10px;
+	float: left;
+}
+
+.navbar-search > .btn 
+{
+	background: url(../images/magnifier13.png) no-repeat center center;
+	width: 24px;
+	height: 24px;
+	margin-left: 5px;
+	margin-top: 5px;
+    opacity: 0.8;
+	float: left;
+}
+
+#connectedUserArea
+{
+	position: absolute;
+	right: 50%;
+    margin-right: -470px;
+	top: 10px;
+}
+
+#connectedUserArea > .img-circle
+{
+	background: url(../images/person.png) no-repeat center center;
+	background-size: contain;
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+
+#connectedUserArea > .btn-group
+{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#resultListTitleBar
+{
+    height: 50px;
+    font-size: 28px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: #834200;
+    color: #FFF3C0;
+    font-family: 'Cinzel', serif;
+}
+
+.dividerThin
+{
+    height: 2px;
+    width: 97%;
+    background-color: #502800;
+    margin: 0px auto;
+}
+
+#filterSortBar
+{
+    height: 50px;
+    background-color: #332312;
+    padding-top: 9px;
+    box-shadow: 0px 0px 4px 1px #000000;
+}
+
+.filterSortBtn
+{
+   	width: 32px;
+	height: 32px;
+    margin-left: 70px;
+    opacity: 0.8;
+	float: left;
+}
+
+.filterSortBtn:hover
+{   
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes bounce
+{
+    0% { -webkit-transform: translate(0px, 0px); }
+    50% { -webkit-transform: translate(0px, -3px); }
+    100% { -webkit-transform: translate(0px, 0px); }
+}
+
+.btn:hover
+{
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition:transform 0.1s ease-in-out;
+    -ms-transition:transform 0.1s ease-in-out;
+}
+
+#filterSmile
+{
+	background: url(../images/happy47.png) no-repeat center center;
+}
+
+#filterCuisine
+{
+	background: url(../images/fork28.png) no-repeat center center;
+}
+
+#filterMap
+{
+	background: url(../images/pointer17.png) no-repeat center center;
+}
+
+#filterSortBar .divider-vertical
+{
+    width: 1px;
+    height: 32px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    margin-left: 70px;
+}
+
+#sortMenuBtn
+{
+	background: url(../images/sort14.png) no-repeat center center;
+}
+
+#ratingTitle
+{
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.restaurantSection
+{
+    position: relative;
+    height: 234px;
+    font-family: 'Cinzel', serif;
+}
+
+#restaurantLabel
+{
+    position: absolute;
+    font-size: 24px;
+    left: 14px;
+    top: 11px;
+}
+
+#restaurantAddress
+{
+    position: absolute;
+    font-size: 12px;
+    left: 104px;
+    top: 23px;
+}
+
+#pinBtn
+{
+    position: absolute;
+    background: url(../images/location51.png) no-repeat center center;
+    left: 340px;
+    top: 23px;
+    opacity: 0.9;
+}
+
+#websiteLinkBtn
+{
+    position: absolute;
+    background: url(../images/screen54.png) no-repeat center center;
+    left: 854px;
+    top: 13px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#shareBtn
+{
+    position: absolute;
+    background: url(../images/share35.png) no-repeat center center;
+    left: 904px;
+    top: 13px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#addToWishlistBtn
+{
+    position: absolute;
+    background: url(../images/heart33.png) no-repeat center center;
+    left: 954px;
+    top: 13px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+.ratingScore
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height:100px;
+    font-size: 30px;
+    border: 5px solid;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+#totalRatingScore
+{
+    position: absolute;
+    left: 18px;
+    top: 58px;
+}
+
+#sadBtn
+{
+    position: absolute;
+    background: url(../images/sad44.png) no-repeat center center;
+    left: 14px;
+    top: 155px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#happyBtn
+{
+    position: absolute;
+    background: url(../images/happy.png) no-repeat center center;
+    left: 88px;
+    top: 155px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#likesLabel
+{
+    position: absolute;
+    top: 185px;
+    left: 95px;
+}
+
+#dislikesLabel
+{
+    position: absolute;
+    top: 185px;
+    left: 23px;
+}
+
+#advancedRatingArea
+{
+    position: absolute;
+    width: 250px;
+    left: 160px;
+    top: 58px;
+}
+
+#foodRatingBar
+{
+    margin-left: 60px;
+    margin-right: 20px;
+    width: 80px;
+    height: 15px;
+}
+
+#serviceRatingBar
+{
+    margin-left: 45px;
+    margin-right: 20px;
+    width: 80px;
+    height: 15px;
+}
+
+#priceRatingBar
+{
+    margin-left: 61px;
+    margin-right: 20px;
+    width: 80px;
+    height: 15px;
+}
+
+#atmosphereRatingBar
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 15px;
+}
+
+#restaurantCuisines
+{
+    position: absolute;
+    top: 205px;
+    left: 160px;
+}
+
+#cuisineInstance
+{
+    height: 20px;
+    width: 77px;
+    border-radius: 12%;
+	border: 1px solid #000000;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#userPhotos
+{
+    position: absolute;
+    height: 120px;
+    width: 220px;
+    top: 58px;
+    left: 500px;    
+}
+
+#rateBtnSection
+{
+    position: absolute;
+    width: 100px;
+    top: 58px;
+    left: 866px;
+    text-align: center;
+}
+
+#rateBtn
+{
+    background: url(../images/rate.png) no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.pagination
+{
+    opacity: 0.9;
+    font-family: 'Cinzel', serif;
+}
+
+#userReviewSection
+{
+    height: 270px;
+    width: 100%;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+}
+
+.well
+{
+    width: 600px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+#reviewerDetails
+{
+    width: 200px;
+    padding: 20px;
+    
+}
+
+#userImg2
+{
+    background: url(../images/person3.jpg) no-repeat center center;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+
+#userImg3
+{
+    background: url(../images/person4.jpg) no-repeat center center;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+
+#userImg4
+{
+    background: url(../images/person5.jpg) no-repeat center center;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+
+.ratingScoreSection
+{
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.reviewRatingScore
+{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    border: 2px solid;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+
+
+#restaurantTitleSection
+{
+    position: relative;
+    height: 50px;
+    font-family: 'Cinzel', serif;
+}
+
+.ratingSection
+{
+    font-family: 'Cinzel', serif;
+    position: relative;
+    height: 100px;
+    width: 950px;
+    margin: 0px auto;
+}
+
+.ratingAreaLabel
+{
+   position: absolute;
+    top: 10px;
+}
+.ratingBarSection
+{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#badRatingBtn
+{
+    position: absolute;
+    background: url(../images/sad44.png) no-repeat center center;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+#goodRatingBtn
+{
+    position: absolute;
+    background: url(../images/happy.png) no-repeat center center;
+    right: 50%;
+    margin-right: -250px;
+    top: 50%;
+    margin-top: -10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+
+.ratingResult
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 50px;
+}
+
+.reviewArea
+{
+    position: absolute;
+    top: 35px;
+    width: 80%;
+    height: 100px;
+}
+
+.photo
+{
+    position: absolute;
+    top: 35px;
+    width: 90px;
+    left: 100px;
+}
+
+.submitBtn
+{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+}
