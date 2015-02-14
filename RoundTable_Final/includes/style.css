@@ -1,3 +1,7 @@
+
+/************************************************************************************/
+/********************************** GENERAL TAGS ************************************/
+/************************************************************************************/
 body
 {
 	background-color: #FFF7EA;
@@ -171,6 +175,16 @@ header .search-query
 	margin-top: 5px;
 }
 
+.pagination
+{
+    opacity: 0.9;
+    font-family: 'Cinzel', serif;
+}
+
+/*********************************************************************************/
+/********************************** MAIN PAGE ************************************/
+/*********************************************************************************/
+
 #resultListTitleBar
 {
     height: 50px;
@@ -180,14 +194,6 @@ header .search-query
     background-color: #834200;
     color: #FFF3C0;
     font-family: 'Cinzel', serif;
-}
-
-.dividerThin
-{
-    height: 2px;
-    width: 97%;
-    background-color: #502800;
-    margin: 0px auto;
 }
 
 #filterSortBar
@@ -214,6 +220,12 @@ header .search-query
 	-webkit-transform-origin: 50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+	
+	-moz-animation-name: bounce;
+	-moz-animation-duration: 0.6s;
+	-moz-transform-origin: 50% 50%;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes bounce
@@ -221,6 +233,13 @@ header .search-query
     0% { -webkit-transform: translate(0px, 0px); }
     50% { -webkit-transform: translate(0px, -3px); }
     100% { -webkit-transform: translate(0px, 0px); }
+}
+
+@-moz-keyframes bounce
+{
+    0% { -moz-transform: translate(0px, 0px); }
+    50% { -moz-transform: translate(0px, -3px); }
+    100% { -moz-transform: translate(0px, 0px); }
 }
 
 .btn:hover
@@ -270,6 +289,10 @@ header .search-query
     color: #FFFFFF;
     margin-top: 6px;
 }
+
+/******************************************************************************************/
+/********************************** RESTAURANT ELEMENT ************************************/
+/******************************************************************************************/
 
 .restaurantSection
 {
@@ -475,11 +498,20 @@ header .search-query
     margin-bottom: 5px;
 }
 
-.pagination
+.dividerThin
 {
-    opacity: 0.9;
-    font-family: 'Cinzel', serif;
+    height: 2px;
+    width: 97%;
+    background-color: #502800;
+    margin: 0px auto;
+    opacity: 0.7;
 }
+
+
+
+/*****************************************************************************************/
+/*********************************** RESTAURANT PAGE *************************************/
+/*****************************************************************************************/
 
 #userReviewSection
 {
@@ -547,7 +579,9 @@ header .search-query
 }
 
 
-
+/*************************************************************************************/
+/*********************************** RATING PAGE *************************************/
+/*************************************************************************************/
 
 #restaurantTitleSection
 {

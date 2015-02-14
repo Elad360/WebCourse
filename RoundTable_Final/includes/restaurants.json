@@ -1,0 +1,18 @@
+{
+	"items": [
+		{
+			"id": "1",
+			"name": "Taizu",
+			"address": "23 Menahem Begin Rd., Tel Aviv, Israel",
+			"rating": 9.5,
+			"food": 9.5,
+			"service": 9.5,
+			"price": 9.0,
+			"atmosphere": 10,
+			"cuisine": "Asian",
+			"likes": 532,
+			"dislikes": 21,
+			"photo": "images/taizu.jpg"
+		}
+	]
+}
