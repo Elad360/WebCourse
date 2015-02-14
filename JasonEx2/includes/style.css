@@ -1,0 +1,7 @@
+article, section, main, nav, aside, footer, header
+{
+	display:block;
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
