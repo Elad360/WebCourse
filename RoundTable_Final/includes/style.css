@@ -57,6 +57,11 @@ label
     float: right;
 }
 
+.hide
+{
+    display: none;
+}
+
 .logo
 {
     position: absolute;
@@ -282,12 +287,17 @@ header .search-query
 #sortMenuBtn
 {
 	background: url(../images/sort14.png) no-repeat center center;
+	border: 2px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 #ratingTitle
 {
+	font-family: 'Cinzel', serif;
     color: #FFFFFF;
-    margin-top: 6px;
+    margin-top: 7px;
+    margin-left: 5px;
+    opacity: 0.9;
 }
 
 /******************************************************************************************/
@@ -301,7 +311,7 @@ header .search-query
     font-family: 'Cinzel', serif;
 }
 
-#restaurantLabel
+.restaurantLabel
 {
     position: absolute;
     font-size: 24px;
@@ -309,7 +319,7 @@ header .search-query
     top: 11px;
 }
 
-#restaurantAddress
+.restaurantAddress
 {
     position: absolute;
     font-size: 12px;
@@ -317,16 +327,13 @@ header .search-query
     top: 23px;
 }
 
-#pinBtn
+.pinBtn
 {
-    position: absolute;
     background: url(../images/location51.png) no-repeat center center;
-    left: 340px;
-    top: 23px;
     opacity: 0.9;
 }
 
-#websiteLinkBtn
+.websiteLinkBtn
 {
     position: absolute;
     background: url(../images/screen54.png) no-repeat center center;
@@ -337,7 +344,7 @@ header .search-query
     opacity: 0.8;
 }
 
-#shareBtn
+.shareBtn
 {
     position: absolute;
     background: url(../images/share35.png) no-repeat center center;
@@ -348,7 +355,7 @@ header .search-query
     opacity: 0.8;
 }
 
-#addToWishlistBtn
+.addToWishlistBtn
 {
     position: absolute;
     background: url(../images/heart33.png) no-repeat center center;
@@ -366,19 +373,19 @@ header .search-query
     text-align: center;
     line-height:100px;
     font-size: 30px;
-    border: 5px solid;
+    border: 7px solid;
     border-radius: 50%;
     opacity: 0.7;
 }
 
-#totalRatingScore
+.totalRatingScore
 {
     position: absolute;
     left: 18px;
     top: 58px;
 }
 
-#sadBtn
+.sadBtn
 {
     position: absolute;
     background: url(../images/sad44.png) no-repeat center center;
@@ -389,7 +396,7 @@ header .search-query
     opacity: 0.8;
 }
 
-#happyBtn
+.happyBtn
 {
     position: absolute;
     background: url(../images/happy.png) no-repeat center center;
@@ -400,21 +407,21 @@ header .search-query
     opacity: 0.8;
 }
 
-#likesLabel
+.likesLabel
 {
     position: absolute;
     top: 185px;
     left: 95px;
 }
 
-#dislikesLabel
+.dislikesLabel
 {
     position: absolute;
     top: 185px;
     left: 23px;
 }
 
-#advancedRatingArea
+.advancedRatingArea
 {
     position: absolute;
     width: 250px;
@@ -422,7 +429,7 @@ header .search-query
     top: 58px;
 }
 
-#foodRatingBar
+.foodRatingBar
 {
     margin-left: 60px;
     margin-right: 20px;
@@ -430,7 +437,7 @@ header .search-query
     height: 15px;
 }
 
-#serviceRatingBar
+.serviceRatingBar
 {
     margin-left: 45px;
     margin-right: 20px;
@@ -438,7 +445,7 @@ header .search-query
     height: 15px;
 }
 
-#priceRatingBar
+.priceRatingBar
 {
     margin-left: 61px;
     margin-right: 20px;
@@ -446,7 +453,7 @@ header .search-query
     height: 15px;
 }
 
-#atmosphereRatingBar
+.atmosphereRatingBar
 {
     margin-left: 10px;
     margin-right: 20px;
@@ -454,14 +461,14 @@ header .search-query
     height: 15px;
 }
 
-#restaurantCuisines
+.restaurantCuisines
 {
     position: absolute;
     top: 205px;
     left: 160px;
 }
 
-#cuisineInstance
+.cuisineInstance
 {
     height: 20px;
     width: 77px;
@@ -471,7 +478,7 @@ header .search-query
     opacity: 0.8;
 }
 
-#userPhotos
+.userPhotos
 {
     position: absolute;
     height: 120px;
@@ -480,7 +487,7 @@ header .search-query
     left: 500px;    
 }
 
-#rateBtnSection
+.rateBtnSection
 {
     position: absolute;
     width: 100px;
@@ -489,7 +496,7 @@ header .search-query
     text-align: center;
 }
 
-#rateBtn
+.rateBtn
 {
     background: url(../images/rate.png) no-repeat center center;
     background-size: contain;
@@ -538,6 +545,7 @@ header .search-query
 #userImg2
 {
     background: url(../images/person3.jpg) no-repeat center center;
+    background-color: #502800;
     background-size: contain;
     height: 48px;
     width: 48px;
@@ -546,6 +554,7 @@ header .search-query
 #userImg3
 {
     background: url(../images/person4.jpg) no-repeat center center;
+    background-color: #502800;
     background-size: contain;
     height: 48px;
     width: 48px;
@@ -554,6 +563,7 @@ header .search-query
 #userImg4
 {
     background: url(../images/person5.jpg) no-repeat center center;
+    background-color: #502800;
     background-size: contain;
     height: 48px;
     width: 48px;

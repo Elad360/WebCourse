@@ -9,6 +9,8 @@
 		<link href="includes/style.css" rel="stylesheet" />
 		<script src="includes/jquery-2.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="includes/generalFunctions.js"></script>
+		<script src="includes/rating.js"></script>
 	</head>
 	
 	<body>
@@ -38,13 +40,9 @@
 		
 		<div id="wrapper">
             <main>                
-                <section id="restaurantTitleSection">
-                    <label id="restaurantLabel">Taizu</label>
-                    <label id="restaurantAddress">23 Menahem Begin Rd., Tel Aviv, Israel</label>
-                </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
+                <section id="restaurantTitleSection"></section>
+                
+                <ul><li class="divider dividerThin"></li></ul>
                 
                 <section class="ratingSection">
                     <h2 class="ratingAreaLabel">Overall rating</h2>
@@ -57,9 +55,7 @@
                     <button type="button" class="btn" id="goodRatingBtn"></button>
                     <label class="reviewRatingScore ratingResult">5.0</label>
                 </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
+                <ul><li class="divider dividerThin"></li></ul>
                 
                 <section class="ratingSection">
                     <h2 class="ratingAreaLabel">Advanced rating</h2>
@@ -102,18 +98,14 @@
                     <button type="button" class="btn" id="goodRatingBtn"></button>
                     <label class="reviewRatingScore ratingResult">5.0</label>
                 </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
+                <ul><li class="divider dividerThin"></li></ul>
                 
                 
                 <section class="ratingSection">
                     <h2 class="ratingAreaLabel">Your review</h2>
                     <textarea class="form-control reviewArea" rows="2" id="comment"></textarea>
                 </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
+                <ul><li class="divider dividerThin"></li></ul>
                 
                 <section class="ratingSection">
                     <h2 class="ratingAreaLabel">Share photos</h2>
