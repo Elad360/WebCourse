@@ -4,11 +4,16 @@
 		<meta charset="UTF-8" />
 		<title>Round Table</title>
         <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link href="includes/init.css" rel="stylesheet" />
 		<link href="includes/style.css" rel="stylesheet" />
-		<script src="includes/jquery-2.1.1.min.js"></script>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="includes/jquery.lightbox_me.js"></script>		
 		<script src="includes/generalFunctions.js"></script>
 		<script src="includes/main.js"></script>
 	</head>
@@ -46,8 +51,18 @@
                 
                 <section id="filterSortBar">
                     <button type="button" class="btn filterSortBtn" id="filterSmile"></button>
-                    <button type="button" class="btn filterSortBtn" id="filterCuisine"></button>
+                    <section class="btn-group" id="cuisineSelector">
+	                    <button type="button" class="btn filterSortBtn dropdown-toggle" id="filterCuisine" data-toggle="dropdown"></button>
+	                    <section class="dropdown-menu" role="menu">
+					    	<label class="cuisineInstance">Asian</label>
+					    	<label class="cuisineInstance">French</label>
+					    	<label class="cuisineInstance">Italian</label>
+					    	<label class="cuisineInstance">Indian</label>
+					  	</section>
+					</section>
+					
                     <button type="button" class="btn filterSortBtn" id="filterMap"></button>
+                    
                     <ul class="nav left">
                         <li class="divider-vertical"></li>
                     </ul>
@@ -79,8 +94,23 @@
                 </li>
             </ul>
                        
-            <div class="clear"></div>            
-			
+            <div class="clear"></div>
+            
+            <section id="filterByRadiusSection">
+            	<form class="navbar-search left">
+                	<input type="text" class="search-query" placeholder="Search by address or drop a pin on a map">
+            	</form>
+            	
+            	<section class="right">
+            		<label class="left">Radius </label>
+            		<section class="left" id="slider"></section>
+            		<input type="text" class="left" id="radiusValue" readonly>
+            	</section>          	
+            	<div class="clear"></div>
+            		
+				<section id="mapWrapper"></section>
+				
+			</section>
 		</div>
 		
 		<footer>
