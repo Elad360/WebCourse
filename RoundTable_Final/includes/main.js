@@ -4,11 +4,16 @@ $(document).ready(function(){
 		var sHTML = "";
 		
 		$.each(data.items, function(key, val){
-			sHTML += generateRestaurantSection(val) + "<li class='divider dividerThin'></li>";			
+			sHTML = generateRestaurantSection(val) + "<li class='divider dividerThin'></li>";
+			$(sHTML).appendTo('#restaurantsList');
 		});
-
-		$('#restaurantsList').append(sHTML);
-		$("#restaurantsList .divider:last").addClass("hide"); //Remove the last divider
+		
+		$("#restaurantsList .divider:last").hide(); //Remove the last divider
+		
+		$('.restaurantSection').each(function(index){
+			$(this).delay((index++) * 300).fadeTo(500, 1); 
+		});
+		
 	});
 	
 		
@@ -62,6 +67,10 @@ $(document).ready(function(){
 		});	
 	}
 		
+	$('#filterSmile').click(function() 
+	{
+		$(this).toggleClass('filterSortBtnSelected');
+	});
 	
 	$('#filterMap').click(function() 
 	{

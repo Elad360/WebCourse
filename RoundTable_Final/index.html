@@ -50,26 +50,48 @@
                 </section>
                 
                 <section id="filterSortBar">
-                    <button type="button" class="btn filterSortBtn" id="filterSmile"></button>
-                    <section class="btn-group" id="cuisineSelector">
-	                    <button type="button" class="btn filterSortBtn dropdown-toggle" id="filterCuisine" data-toggle="dropdown"></button>
-	                    <section class="dropdown-menu" role="menu">
-					    	<label class="cuisineInstance">Asian</label>
-					    	<label class="cuisineInstance">French</label>
-					    	<label class="cuisineInstance">Italian</label>
-					    	<label class="cuisineInstance">Indian</label>
-					  	</section>
-					</section>
-					
-                    <button type="button" class="btn filterSortBtn" id="filterMap"></button>
-                    
-                    <ul class="nav left">
-                        <li class="divider-vertical"></li>
-                    </ul>
-                    <button type="button" class="btn filterSortBtn" id="sortMenuBtn"></button>
-                    <section class="left" id="ratingTitle">
-                        <label>Overall Rating</label>
-                    </section>
+                	<section id="filterButtonsWrapper">
+                		
+	                    <button type="button" class="filterSortBtn" id="filterSmile"></button>
+	                    <section class="btn-group" id="cuisineSelector">
+		                    <button type="button" class="filterSortBtn dropdown-toggle" id="filterCuisine" data-toggle="dropdown"></button>
+		                    <section class="dropdown-menu" role="menu">
+						    	<label class="cuisineInstance">Asian</label>
+						    	<label class="cuisineInstance">French</label>
+						    	<label class="cuisineInstance">Italian</label>
+						    	<label class="cuisineInstance">Indian</label>
+						  	</section>
+						</section>
+						
+	                    <button type="button" class="filterSortBtn" id="filterMap"></button>
+	                    <section id="filterByRadiusSection">
+	                    	<section id="radiusFilterWrapper">
+				            	<form class="navbar-search left">
+				                	<input type="text" class="search-query" placeholder="Search by address or drop a pin on a map">
+				            	</form>
+				            	
+				            	<section class="right">
+				            		<label class="left">Radius </label>
+				            		<section class="left" id="slider"></section>
+				            		<input type="text" class="left" id="radiusValue" readonly>
+				            	</section>          	
+				            	<div class="clear"></div>
+				            		
+								<section id="mapWrapper"></section>
+								
+								<button type="button" class="btn btn-warning right">Apply</button>
+								<button type="button" class="btn btn-link right">Clear</button>
+								
+							</section>
+							
+						</section>
+	                    
+	                    <ul class="nav left">
+	                        <li class="divider-vertical"></li>
+	                    </ul>
+	                    <button type="button" class="filterSortBtn" id="sortMenuBtn"></button>
+	                    <label id="sortMenuBtnLabel">Overall Rating</label>
+	            	</section>
                 </section>
                 
                 <ul id="restaurantsList"></ul>
@@ -96,21 +118,6 @@
                        
             <div class="clear"></div>
             
-            <section id="filterByRadiusSection">
-            	<form class="navbar-search left">
-                	<input type="text" class="search-query" placeholder="Search by address or drop a pin on a map">
-            	</form>
-            	
-            	<section class="right">
-            		<label class="left">Radius </label>
-            		<section class="left" id="slider"></section>
-            		<input type="text" class="left" id="radiusValue" readonly>
-            	</section>          	
-            	<div class="clear"></div>
-            		
-				<section id="mapWrapper"></section>
-				
-			</section>
 		</div>
 		
 		<footer>

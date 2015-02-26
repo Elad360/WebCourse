@@ -9,7 +9,7 @@ function generateRestaurantSection(val)
                 	<button type="button" class="btn websiteLinkBtn"></button>\
                 	<button type="button" class="btn shareBtn"></button>\
                 	<button type="button" class="btn addToWishlistBtn"></button>\
-                	<label class="ratingScore totalRatingScore">' + val.rating.toFixed(1) + '</label>\
+                	<label class="ratingScore totalRatingScore hoverEffect effect-1">' + val.rating.toFixed(1) + '</label>\
                 	<button type="button" class="btn happyBtn"></button>\
                 	<button type="button" class="btn sadBtn"></button>\
                 	<label class="dislikesLabel">' + val.dislikes + '</label>\
