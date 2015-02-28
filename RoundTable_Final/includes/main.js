@@ -66,11 +66,20 @@ $(document).ready(function(){
 
 		});	
 	}
+	
 		
 	$('#filterSmile').click(function() 
 	{
 		$(this).toggleClass('filterSortBtnSelected');
 	});
+	
+	
+	$('.dropdown-menu > .cuisineInstance').click(function() 
+	{
+		$(this).toggleClass('cuisineSelected');
+		$('#filterCuisine').toggleClass('filterSortBtnSelected');
+	});
+	
 	
 	$('#filterMap').click(function() 
 	{
@@ -86,10 +95,24 @@ $(document).ready(function(){
 	});
 	
 	
+	$('#radiusFilterWrapper > .btn-warning').click(function()
+	{
+		$('#filterMap').addClass('filterSortBtnSelected');
+		$('#filterByRadiusSection').trigger('close');
+	});
+	
+	
+	$('#radiusFilterWrapper > .btn-link').click(function()
+	{
+		$('#filterMap').removeClass('filterSortBtnSelected');
+		$('#filterByRadiusSection').trigger('close');
+	});	
+	
+	
 	$(function() {
 		$( "#slider" ).slider({
 			value: 2,
-			min: 0,
+			min: 1,
 			max: 20,
 			step: 1,
 			slide: function( event, ui ) {

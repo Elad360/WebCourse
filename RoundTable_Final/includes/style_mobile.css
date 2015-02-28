@@ -1,0 +1,518 @@
+@media (max-width:380px)
+{
+	
+	/************************************************************************************/
+	/********************************** GENERAL TAGS ************************************/
+	/************************************************************************************/
+	
+	#wrapper
+	{
+		width: 380px;
+	}
+	
+	header
+	{	
+		height: 60px;
+		width: 380px;
+		padding: 5px;
+	}
+	
+	footer
+	{
+		width: 380px;
+	    height: 90px;
+	}
+	
+	.logo
+	{
+		width: 50px;
+		height: 50px;
+		margin: 0px auto;
+	}
+	
+	footer > .logo
+	{
+	    width: 25px;
+		height: 25px;
+		margin: 0px auto;
+	}
+	
+	footer .dividerThin
+	{
+	    height: 1px;
+	    width: 97%;
+	    margin: 0px auto;
+	    margin-top: 10px;
+	    margin-bottom: 5px;
+	}
+	
+	#footerLinks
+	{
+		width: 100%;
+	    text-align: center;
+	}
+	
+	#footerLinks > a
+	{
+	    font-size: 9px;
+	}
+	
+	#footerRightsLabel
+	{
+		width: 100%;
+	    text-align: center;
+	    font-size: 8px;
+	}
+	
+	header > .navbar-search 
+	{
+		display: none;
+	}
+	
+	#connectedUserArea
+	{
+		display: none;
+	}
+	
+	.pagination
+	{
+		visibility: hidden;
+	}
+	
+	/*********************************************************************************/
+	/********************************** MAIN PAGE ************************************/
+	/*********************************************************************************/
+	
+	main > .navbar-search
+	{
+		height: 50px;
+	}
+	
+	main > .navbar-search > .search-query
+	{
+		width: 100%;
+		font-family: 'Cinzel', serif;
+		height: 46px;
+		padding-left: 10px;
+	    margin-top: 2px;
+	    margin-bottom: 2px;
+	}
+	
+	#resultListTitleBar
+	{
+	    height: 50px;
+	    font-size: 22px;
+	    padding-left: 10px;
+	    padding-top: 12px;
+	}
+
+	#cuisineSelector > .dropdown-menu
+	{
+		width: 200px;
+	}
+		
+	#filterByRadiusSection
+	{ 
+		height: 490px; 
+		width: 300px;
+		padding: 5px;
+	}
+	
+	#radiusFilterWrapper
+	{
+		margin: 0px auto;
+		height: 350px; 
+		width: 250px;
+		margin-top: 10px;
+	}
+	
+	#radiusFilterWrapper > .search-query
+	{
+		width: 100%;
+		height: 34px;
+		font-size: 10px;
+	}
+	
+	#radiusSelectorSection
+	{
+		clear: both;
+	}
+	
+	#slider
+	{
+		width: 120px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+	
+	#mapWrapper 
+	{
+		height: 320px; 
+		width: 250px;
+		border: 2px solid #FFFFFF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	#sortMenuBtnLabel
+	{
+		display: none;
+	}	
+	
+	/******************************************************************************************/
+	/*************************** RESTAURANT ELEMENT - MAIN PAGE *******************************/
+	/******************************************************************************************/
+	
+	.restaurantSection
+	{
+	    height: 220px;
+	}
+	
+	.restaurantAddress
+	{
+	    font-size: 10px;
+	}
+	
+	.websiteLinkBtn
+	{
+	    display: none;
+	}
+	
+	.shareBtn
+	{
+		display: none;
+	}
+	
+	.addToWishlistBtn
+	{
+	    display: none;
+	}
+	
+	.totalRatingScore
+	{
+	    left: 13px;
+	    top: 58px; 
+	}	
+	
+	.sadBtn
+	{
+	    left: 9px;
+	    top: 155px;
+	}
+	
+	.happyBtn
+	{
+	    left: 83px;
+	    top: 155px;
+	}
+	
+	.likesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 90px;
+	}
+	
+	.dislikesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 18px;
+	}
+	
+	.advancedRatingArea
+	{
+	    position: absolute;
+	    width: 125px;
+	    left: 128px;
+	    top: 58px;
+	    font-size: 13px;
+	    line-height: 21px;
+	}
+	
+	.advancedRatingVal
+	{
+		float: right;
+	}
+	
+	.foodRatingBar
+	{
+	    display: none;
+	}
+	
+	.serviceRatingBar
+	{
+	    display: none;
+	}
+	
+	.priceRatingBar
+	{
+	    display: none;
+	}
+	
+	.atmosphereRatingBar
+	{
+	    display: none;
+	}
+	
+	.restaurantCuisines
+	{
+	    display: none;
+	}
+	
+	.userPhotos
+	{
+	    display: none;   
+	}
+	
+	.rateBtnSection
+	{
+	    position: absolute;
+	    width: 100px;
+	    top: 58px;
+	    left: 266px;
+	    text-align: center;
+	}
+	
+	.dividerThin
+	{
+	    height: 1px;
+	    width: 90%;
+	}
+	
+	
+	
+	/******************************************************************************************/
+	/************************ RESTAURANT ELEMENT - RESTAURANT PAGE ****************************/
+	/******************************************************************************************/
+	
+	#restaurantInfo > .restaurantSection
+	{
+	    height: 475px;
+	}
+	
+	#restaurantInfo .websiteLinkBtn
+	{
+		position: absolute;
+	    display: inherit;
+	    left: 74px;
+	    top: 260px;
+	}
+	
+	#restaurantInfo .shareBtn
+	{
+		position: absolute;
+		display: inherit;
+		left: 174px;
+		top: 260px;
+	}
+	
+	#restaurantInfo .addToWishlistBtn
+	{
+		position: absolute;
+	    display: inherit;
+	    left: 274px;
+	    top: 260px;
+	}
+	
+	#restaurantInfo .totalRatingScore
+	{
+	    top: 318px; 
+	}	
+	
+	#restaurantInfo .sadBtn
+	{
+	    top: 415px;
+	}
+	
+	#restaurantInfo .happyBtn
+	{
+	    top: 415px;
+	}
+	
+	#restaurantInfo .likesLabel
+	{
+	    top: 445px;
+	}
+	
+	#restaurantInfo .dislikesLabel
+	{
+	    top: 445px;
+	}
+	
+	#restaurantInfo .advancedRatingArea
+	{
+	    top: 318px;
+	}
+	
+	#restaurantInfo .userPhotos
+	{
+		position: absolute;
+	    display: inherit;
+	    height: 193px;
+	    width: 354px;
+	    background-position: center;
+		background-size: cover;
+	    top: 58px;
+	    left: 13px;  
+	}
+	
+	#restaurantInfo .rateBtnSection
+	{
+	    top: 318px;
+	}
+	
+	#restaurantInfo .dividerThin
+	{
+		position: absolute;
+		top: 360px;
+	    height: 1px;
+	    width: 340px;
+	    left: 50%;
+	    margin-left: -170px;
+	}
+	
+	
+	
+	/*****************************************************************************************/
+	/*********************************** RESTAURANT PAGE *************************************/
+	/*****************************************************************************************/
+	
+	#userReviewSection
+	{
+	    height: 270px;
+	    width: 100%;
+	    font-family: 'Cinzel', serif;
+	    font-size: 12px;
+	}
+	
+	#userReviewSection > .well
+	{
+	    width: 300px;
+	    margin-top: 20px;
+	}
+	
+	#reviewerDetails
+	{
+	    width: 200px;
+	    padding: 20px;
+	    
+	}
+	
+	#userReviewSection > .well > .ratingScoreSection:first-child
+	{
+		display: inherit;
+	}
+	
+	.ratingScoreSection
+	{
+		display: none;
+	}
+	
+	.reviewRatingScore
+	{
+	    width: 55px;
+	    height: 55px;
+	    text-align: center;
+	    line-height: 55px;
+	    font-size: 18px;
+	    border: 2px solid;
+	    border-radius: 50%;
+	    opacity: 0.8;
+	}
+	
+	
+	/*************************************************************************************/
+	/*********************************** RATING PAGE *************************************/
+	/*************************************************************************************/
+	
+	#restaurantTitleSection
+	{
+	    position: relative;
+	    height: 50px;
+	    font-family: 'Cinzel', serif;
+	}
+	
+	.ratingSection
+	{
+	    font-family: 'Cinzel', serif;
+	    position: relative;
+	    height: 100px;
+	    width: 950px;
+	    margin: 0px auto;
+	}
+	
+	.ratingAreaLabel
+	{
+	   	position: absolute;
+	    top: 10px;
+	}
+	
+	.ratingBarSection
+	{
+	    position: absolute;
+	    width: 400px;
+	    top: 50%;
+	    margin-top: -5px;
+	    left: 50%;
+	    margin-left: -200px;
+	}
+	
+	#badRatingBtn
+	{
+	    position: absolute;
+	    background: url(../images/sad44.png) no-repeat center center;
+	    left: 50%;
+	    margin-left: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	    width: 32px;
+	    height: 32px;
+	    opacity: 0.8;
+	}
+	
+	#goodRatingBtn
+	{
+	    position: absolute;
+	    background: url(../images/happy.png) no-repeat center center;
+	    right: 50%;
+	    margin-right: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	    width: 32px;
+	    height: 32px;
+	    opacity: 0.8;
+	}
+	
+	.ratingResult
+	{
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -25px;
+	    right: 50px;
+	}
+	
+	.reviewArea
+	{
+	    position: absolute;
+	    top: 35px;
+	    width: 80%;
+	    height: 100px;
+	}
+	
+	.photo
+	{
+	    position: absolute;
+	    top: 35px;
+	    width: 90px;
+	    left: 100px;
+	}
+	
+	.submitBtn
+	{
+	    position: absolute;
+	    top: 35px;
+	    left: 50%;
+	}
+}

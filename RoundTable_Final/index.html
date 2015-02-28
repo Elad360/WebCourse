@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link href="includes/init.css" rel="stylesheet" />
 		<link href="includes/style.css" rel="stylesheet" />
+		<link href="includes/style_mobile.css" rel="stylesheet" />
+		<link href="includes/style_desktop.css" rel="stylesheet" />
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
@@ -22,14 +24,14 @@
 			
 		<header>
 			<a href="index.html" class="logo"></a>
-            <form class="navbar-search">
+            <section class="navbar-search">
                 <input type="text" class="search-query" placeholder="Restaurant or city">
                 <button type="button" class="btn"></button>
-            </form>
+            </section>
 			<section id="connectedUserArea">
 				<section class="img-circle"></section>
 				<section class="btn-group">
-					<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+					<button class="btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
 				    	Greetings, Gilad <span class="caret"></span>
 				    </button>
 				  	<ul class="dropdown-menu" role="menu">
@@ -44,7 +46,10 @@
 		</header>
 		
 		<div id="wrapper">			
-            <main>                
+            <main>
+        	    <section class="navbar-search">
+                	<input type="text" class="search-query" placeholder="Restaurant or city">
+            	</section> 
                 <section id="resultListTitleBar">
                     <h1>Top restaurants in Tel Aviv</h1>
                 </section>
@@ -66,24 +71,21 @@
 	                    <button type="button" class="filterSortBtn" id="filterMap"></button>
 	                    <section id="filterByRadiusSection">
 	                    	<section id="radiusFilterWrapper">
-				            	<form class="navbar-search left">
-				                	<input type="text" class="search-query" placeholder="Search by address or drop a pin on a map">
-				            	</form>
-				            	
-				            	<section class="right">
-				            		<label class="left">Radius </label>
-				            		<section class="left" id="slider"></section>
-				            		<input type="text" class="left" id="radiusValue" readonly>
-				            	</section>          	
-				            	<div class="clear"></div>
-				            		
+					            <input type="text" class="search-query left" placeholder="Search by address or drop a pin on a map">
+					            
+					            <section id="radiusSelectorSection">
+					            	<label class="left">Radius</label>
+					            	<section id="slider" class="left"></section>
+					            	<input type="text" id="radiusValue" class="left" readonly>
+					            </section>				                      	
+					            <div class="clear"></div>
+					            		
 								<section id="mapWrapper"></section>
-								
+									
 								<button type="button" class="btn btn-warning right">Apply</button>
 								<button type="button" class="btn btn-link right">Clear</button>
 								
-							</section>
-							
+							</section>							
 						</section>
 	                    
 	                    <ul class="nav left">

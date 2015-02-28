@@ -26,7 +26,7 @@
 			"cuisine": "French",
 			"likes": 134,
 			"dislikes": 10,
-			"photo": "images/taizu.jpg"
+			"photo": "images/catit.jpg"
 		},
 		{
 			"id": "3",
@@ -40,7 +40,7 @@
 			"cuisine": "Italian",
 			"likes": 256,
 			"dislikes": 23,
-			"photo": "images/taizu.jpg"
+			"photo": "images/toto.jpg"
 		}
 	]
 }

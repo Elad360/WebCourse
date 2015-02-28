@@ -21,7 +21,7 @@ function generateRestaurantSection(val)
 	                        <section class="progress left foodRatingBar">\
 	                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: ' + val.food*10 + '%;"></section>\
 	                        </section>\
-	                        <label class="left">' + val.food.toFixed(1) + '</label>\
+	                        <label class="advancedRatingVal">' + val.food.toFixed(1) + '</label>\
 	                    </section>\
 	                    <div class="clear"></div>\
 	                    <section>\
@@ -29,7 +29,7 @@ function generateRestaurantSection(val)
 	                        <section class="progress left serviceRatingBar">\
 	                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: ' + val.service*10 + '%;"></section>\
 	                        </section>\
-	                        <label class="left">' + val.service.toFixed(1) + '</label>\
+	                        <label class="advancedRatingVal">' + val.service.toFixed(1) + '</label>\
 	                    </section>\
 	                    <div class="clear"></div>\
 	                    <section>\
@@ -37,7 +37,7 @@ function generateRestaurantSection(val)
 	                        <section class="progress left priceRatingBar">\
 	                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: ' + val.price*10 + '%;"></section>\
 	                        </section>\
-	                        <label class="left">' + val.price.toFixed(1) + '</label>\
+	                        <label class="advancedRatingVal">' + val.price.toFixed(1) + '</label>\
 	                    </section>\
 	                    <div class="clear"></div>\
 	                    <section>\
@@ -45,7 +45,7 @@ function generateRestaurantSection(val)
 	                        <section class="progress left atmosphereRatingBar">\
 	                            <section class="progress-bar progress-bar-warning" role="progressbar" style="width: ' + val.atmosphere*10 + '%;"></section>\
 	                        </section>\
-	                        <label class="left">' + val.atmosphere.toFixed(1) + '</label>\
+	                        <label class="advancedRatingVal">' + val.atmosphere.toFixed(1) + '</label>\
 	                    </section>\
 	                    <div class="clear"></div>\
 	            	</section>\
@@ -54,7 +54,7 @@ function generateRestaurantSection(val)
                     	<label class="cuisineInstance">' + val.cuisine + '</label>\
                 	</section>\
                 	\
-                	<img class="img-thumbnail userPhotos" src=' + val.photo + ' alt="User photos">\
+                	<section class="userPhotos" style="background-image:url(' + val.photo + ')"></section>\
                 	\
 	                <section class="rateBtnSection">\
 	                	<a href="rating.html?restId=' + val.id + '" class="btn rateBtn"></a>\
