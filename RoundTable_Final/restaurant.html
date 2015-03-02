@@ -2,13 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Round Table</title>
         <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link href="includes/init.css" rel="stylesheet" />
 		<link href="includes/style.css" rel="stylesheet" />
-		<link href="includes/style_mobile.css" rel="stylesheet" />
-		<link href="includes/style_desktop.css" rel="stylesheet" />
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -18,11 +17,15 @@
 	<body>
 		
 		<header>
+			<a href="login-page.html" class="glyphicon glyphicon-menu-hamburger"></a>
 			<a href="index.html" class="logo"></a>
-            <form class="navbar-search">
-                <input type="text" class="search-query" placeholder="Restaurant or city">
-                <button type="button" class="btn"></button>
-            </form>
+            <form role="form"> 
+  				<section class="form-group has-feedback search">
+    				<input type="text" class="form-control" placeholder="Restaurant or city" />
+    				<i class="form-control-feedback glyphicon glyphicon-search"></i>
+  				</section>
+			</form>
+			<button type="button" class="btn searchButton"></button>
 			<section id="connectedUserArea">
 				<section class="img-circle"></section>
 				<section class="btn-group">
@@ -30,14 +33,20 @@
 				    	Greetings, Gilad <span class="caret"></span>
 				    </button>
 				  	<ul class="dropdown-menu" role="menu">
-				    	<li><a href="#">Account Settings</a></li>
-    					<li><a href="#">My Reviews</a></li>
-					    <li><a href="#">My Wishlist</a></li>
+				    	<li><a href="personal-page.html">Account Settings</a></li>
+    					<li><a href="personal-page.html">My Reviews</a></li>
+					    <li><a href="personal-page.html">My Wishlist</a></li>
 					    <li class="divider"></li>
 					    <li><a href="#">Log out</a></li>
 				  	</ul>
 				</section>
-			</section>                
+			</section>
+			
+			<section id="loginNavSection">
+				<a href="registration-page.html" class="btn btn-link left">JOIN</a>
+				<a href="login-page.html" class="btn btn-link left">LOG IN</a>
+			</section>
+			                      
 		</header>
 		
 		<div id="wrapper">			
@@ -46,7 +55,7 @@
             		<li class="divider dividerThin"></li>
             	</ul>
                 
-                <section id="resultListTitleBar">
+                <section class="titleBar">
                     <label>User Reviews</label>
                 </section>
                 

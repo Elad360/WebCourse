@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Round Table</title>
+        <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="includes/init.css" rel="stylesheet" />
+		<link href="includes/style.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>	
+		<script src="includes/generalFunctions.js"></script>
+		<script src="includes/personal_page.js"></script>
+	</head>
+	
+	<body>
+			
+		<header>
+			<a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+			<a href="index.html" class="logo"></a>
+            <form role="form"> 
+  				<section class="form-group has-feedback search">
+    				<input type="text" class="form-control" placeholder="Restaurant or city" />
+    				<i class="form-control-feedback glyphicon glyphicon-search"></i>
+  				</section>
+			</form>
+			<button type="button" class="btn searchButton"></button>
+			<section id="connectedUserArea">
+				<section class="img-circle"></section>
+				<section class="btn-group">
+					<button class="btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+				    	Greetings, Gilad <span class="caret"></span>
+				    </button>
+				  	<ul class="dropdown-menu" role="menu">
+				    	<li><a href="personal-page.html">Account Settings</a></li>
+    					<li><a href="personal-page.html">My Reviews</a></li>
+					    <li><a href="personal-page.html">My Wishlist</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Log out</a></li>
+				  	</ul>
+				</section>
+			</section>
+			
+			<section id="loginNavSection">
+				<a href="registration-page.html" class="btn btn-link left">JOIN</a>
+				<a href="login-page.html" class="btn btn-link left">LOG IN</a>
+			</section>
+			                         
+		</header>
+		
+		<section class="emptySpace"></section>		
+		<div id="wrapper">                       
+            <section id="loginSection">
+            	<section class="titleBar">
+                	<h2>Log In</h2>
+            	</section>
+            	<form role="form" class="loginForm"> 
+	  				<section class="form-group has-feedback">
+	    				<input type="text" class="form-control" placeholder="Email" />
+	    				<i class="form-control-feedback glyphicon glyphicon-envelope"></i>
+	  				</section>
+	  				<section class="form-group has-feedback">
+	    				<input type="text" class="form-control" placeholder="Password" />
+	    				<i class="form-control-feedback glyphicon glyphicon-lock"></i>
+	  				</section>
+	  				<a href="#" class="btn btn-link left">Forgot password?</a>
+	  				<a href="personal-page.html" class="btn btn-warning right">LOG IN</a>
+	  				<a href="registration-page.html" class="btn btn-link right">JOIN</a>
+				</form>
+	    	</section>
+		</div>
+		<section class="emptySpace"></section>
+		
+		<footer>
+            <a href="index.html" class="logo"></a>
+            <ul class="nav nav-list">
+                <li class="divider dividerThin"></li>
+            </ul>
+            <section id="footerLinks">
+                <a href="#">About Us </a>
+                <a href="#">Site Map </a>
+                <a href="#">Help and FAQ</a>
+            </section>
+            <label id="footerRightsLabel">© 2014 Round Table All rights reserved.</label>
+        </footer>
+			
+	</body>
+</html>

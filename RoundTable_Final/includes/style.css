@@ -4,17 +4,12 @@
 
 body
 {
-	/*background-color: #FFF7EA;*/
 	background: url(../images/main-bg.png);
-	
-	/*overflow: hidden;*/
 }
 
 main
 {    
-    /*background-color: #E8DDCC;*/
-    /*background-color: #F0F0F0;*/
-   background: url(../images/bg.png);
+    background: url(../images/bg.png);
     box-shadow: 0px 0px 6px 0px #332312;
 }
 
@@ -48,7 +43,6 @@ label
     opacity: 0.9;
     font-family: 'Cinzel', serif;
 }
-
 	
 #wrapper
 {
@@ -67,7 +61,6 @@ header
 footer
 {
     width: 100%;
-    /*background-color: #332312;*/
    	background: url(../images/footer-pattern.png) repeat-x;
     box-shadow: 0px 0px 8px 0px #000000;
     padding-top: 10px;
@@ -78,6 +71,11 @@ footer
 	display: block;
 	background: url(../images/logo.png) no-repeat center center;
 	background-size: contain;
+}
+
+header > .glyphicon-menu-hamburger
+{
+	display: none;
 }
 	
 footer .dividerThin
@@ -101,18 +99,40 @@ footer .dividerThin
     font-family: 'Cinzel', serif;
 }
 	
-.search-query 
+.search 
 {
     font-family: 'Cinzel', serif;
-    padding-left: 10px;
 }
 	
-.navbar-search > .btn 
+.searchButton 
 {
 	background: url(../images/magnifier13.png) no-repeat center center;
     opacity: 0.8;
 }
-	
+
+.glyphicon-search
+{
+	opacity: 0.7;
+}
+
+#connectedUserArea
+{
+	display: none;
+	opacity: 0.9;
+}
+
+#loginNavSection
+{
+	font-family: 'Cinzel', serif;
+	opacity: 0.9;
+}
+
+#loginNavSection > .btn-link
+{
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
 #connectedUserArea > .img-circle
 {
 	background: url(../images/person.png) no-repeat center center;
@@ -181,6 +201,7 @@ footer .dividerThin
 
 .hoverEffect.effect-1
 {
+	text-decoration: none;
 	background: rgba(255, 255, 255, 0.1);
     -webkit-transition: background 0.2s, color 0.2s;
     -moz-transition: background 0.2s, color 0.2s;
@@ -217,15 +238,14 @@ footer .dividerThin
     opacity: 1;
 }
 
+
 /*********************************************************************************/
 /********************************** MAIN PAGE ************************************/
 /*********************************************************************************/
 
-#resultListTitleBar
+.titleBar
 {
-    /*background-color: #834200;*/
    	background: url(../images/title-bar-bg.png) repeat-x;
-    /*color: #FFF3C0;*/
     color: #BCB19F;
     font-family: 'Cinzel', serif;
 }
@@ -234,7 +254,6 @@ footer .dividerThin
 {
 	position: relative;
 	height: 50px;
-    /*background-color: #332312;*/
     background: url(../images/sort-bar-bg.png) repeat-x;
     box-shadow: 0px 0px 4px 1px #000000;
 }
@@ -245,19 +264,23 @@ footer .dividerThin
 	top: 50%;
     margin-top: -16px;	
 }
-	
+
 .filterSortBtn
 {
-	float: left;
-   	width: 32px;
+	width: 32px;
 	height: 32px;
-    opacity: 0.8;
 	border: none;
 	border-radius: 50%;
+}
+
+#filterButtonsWrapper .filterSortBtn
+{
+	float: left;
+    opacity: 0.8;
 	transition: box-shadow 0.2s;
 }
 	
-.filterSortBtn:hover
+#filterButtonsWrapper .filterSortBtn:hover
 {   
 	box-shadow: 0 0 0 5px #FFFFFF;
 	border-radius: 50%;
@@ -271,6 +294,10 @@ footer .dividerThin
 #filterSmile
 {
 	background: url(../images/happy47.png) no-repeat center center;
+}
+
+#filterButtonsWrapper #filterSmile
+{
 	margin-left: 31px;
 }
 
@@ -319,14 +346,17 @@ footer .dividerThin
 #filterMap
 {
 	background: url(../images/pointer17.png) no-repeat center center;
+}
+
+#filterButtonsWrapper > #filterMap
+{
 	margin-left: 44px;
 }
 		
 #filterByRadiusSection
 { 
-	background-color: #E8DDCC;
-	box-shadow: 0px 0px 3px 0px #834200;
-	border-radius: 8px;
+	box-shadow: 0px 0px 6px 0px #332312;
+	background: url(../images/bg.png);
 	font-family: 'Cinzel', serif;
 	display: none;
 }
@@ -347,6 +377,8 @@ footer .dividerThin
 {
 	text-decoration: none;
 	margin-right: 10px;
+	color: #000000;
+	opacity: 0.9;
 }
 	
 #mapWrapper 
@@ -424,7 +456,7 @@ footer .dividerThin
 .pinBtn
 {
     background: url(../images/location51.png) no-repeat center center;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 	
 .websiteLinkBtn
@@ -433,7 +465,7 @@ footer .dividerThin
     background: url(../images/screen54.png) no-repeat center center;
     width: 32px;
     height: 32px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 	
 .shareBtn
@@ -442,7 +474,7 @@ footer .dividerThin
     background: url(../images/share35.png) no-repeat center center;
     width: 32px;
     height: 32px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 	
 .addToWishlistBtn
@@ -451,7 +483,7 @@ footer .dividerThin
     background: url(../images/heart33.png) no-repeat center center;
     width: 32px;
     height: 32px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 	
 .ratingScore
@@ -463,13 +495,15 @@ footer .dividerThin
     font-size: 30px;
     border: 7px solid;
     border-radius: 50%;
+    color: inherit;
     opacity: 0.7;
+    text-decoration: none;
 }
 	
 .totalRatingScore
 {
     position: absolute;
-    cursor: pointer;  
+    cursor: pointer;
 }
 	
 .sadBtn
@@ -537,8 +571,8 @@ footer .dividerThin
 
 .userReviewSection > .well
 {
-	opacity: 0.8;
-	background-color: #FFF7EA;
+	background: url(../images/main-bg.png);
+	box-shadow: 0px 0px 8px 0px #332312 inset;
 }
 
 .userImg2
@@ -626,5 +660,1311 @@ footer .dividerThin
 {
     position: absolute;
     background: url(../images/camera-icon.png) no-repeat center center;
+}
+
+
+/*****************************************************************************************/
+/************************************ PERSONAL PAGE **************************************/
+/*****************************************************************************************/
+
+main > #mapWrapper
+{
+	margin: 0px auto;
+	width: 85%;
+}
+
+.recommendedSection .btn label
+{
+	font-family: 'Cinzel', serif;
+	color: #FFFFFF;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+
+.recommendedSection .btn .filterSortBtn
+{
+	margin-bottom: 10px;
+}
+
+.recommendedSection .btn .glyphicon-heart
+{
+	width: 32px;
+	height: 32px;
+	color: #FFFFFF;
+	font-size: 28px;
+	background: none;
+	border: none;
+	margin-right: 32px;
+	margin-bottom: 10px;
+}
+
+.titleBar .glyphicon-list
+{
+	width: 32px;
+	height: 32px;
+	color: #FFFFFF;
+	font-size: 28px;
+	background: none;
+	border: none;
+	margin-right: 10px;
+	opacity: 0.9;
+	padding-bottom: 7px;
+}
+
+
+/*****************************************************************************************/
+/************************************ LOG IN PAGE ****************************************/
+/*****************************************************************************************/
+
+.emptySpace
+{
+	height: 100px;
+}
+
+#loginSection
+{
+	background: url(../images/bg.png);
+	margin: 0px auto;
+}
+
+.loginForm
+{
+	margin: 0px auto;	
+}
+
+.loginForm .btn-link
+{
+	color: #000000;
+	opacity: 0.6;
+}
+
+
+
+
+
+
+
+/**************************************************************************  DESKTOP  ************************************************************************************************/
+@media only screen and (min-width:481px)
+{
+	
+	/************************************************************************************/
+	/********************************** GENERAL TAGS ************************************/
+	/************************************************************************************/
+		
+	#wrapper
+	{
+		width: 1000px;
+	}
+	
+	header
+	{
+		height: 86px;
+	}	
+
+	footer
+	{
+	    height: 110px;
+	}
+	
+	header > .logo
+	{
+		position: absolute;
+		width: 70px;
+		height: 70px;
+	    left: 50%;
+		margin-left: -500px;
+		top: 50%;
+		margin-top: -35px;
+	}
+	
+	footer > .logo
+	{
+	    width: 30px;
+		height: 30px;
+		margin: 0px auto;
+	}
+	
+	footer .dividerThin
+	{
+	    margin: 0px auto;
+	    margin-top: 10px;
+	    margin-bottom: 5px;
+	}
+	
+	#footerLinks
+	{
+		width: 100%;
+	    text-align: center;
+	}
+	
+	#footerLinks > a
+	{
+	    font-size: 12px;
+	}
+	
+	#footerRightsLabel
+	{
+		width: 100%;
+	    text-align: center;
+	    font-size: 9px;
+	}
+	
+	header > form 
+	{
+		position: absolute;
+		width: 380px;
+		left: 50%;
+		margin-left: -200px;
+		top: 50%;
+		margin-top: -17px;
+	}
+	
+	header > .search
+	{
+		float: left;
+		width: 340px;
+		height: 34px;
+	}
+	
+	.searchButton
+	{
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		left: 50%;
+		margin-left: 190px;
+		top: 50%;
+		margin-top: -12px;
+	}
+	
+	header .glyphicon-search
+	{
+		display: none;
+	}
+	
+	#loginNavSection
+	{
+		position: absolute;
+		right: 50%;
+	    margin-right: -470px;
+		top: 50%;
+		margin-top: -20px;
+	}	
+	
+	#connectedUserArea
+	{
+		position: absolute;
+		right: 50%;
+	    margin-right: -470px;
+		top: 10px;
+	}
+	
+	#connectedUserArea > .img-circle
+	{
+		width: 16px;
+		height: 16px;
+		float: left;
+	}
+	
+	#connectedUserArea > .btn-group
+	{
+		float: left;
+		margin-left: 3px;
+	}
+	
+	.dropdown-toggle
+	{
+		font-size: 12px;
+	}
+		
+	/*********************************************************************************/
+	/********************************** MAIN PAGE ************************************/
+	/*********************************************************************************/
+	
+	main > form
+	{
+		display: none;
+	}
+	
+	.titleBar
+	{
+	    height: 50px;
+	    font-size: 28px;
+	    padding-left: 10px;
+	    padding-top: 10px;
+	}
+	
+	#cuisineSelector > .dropdown-menu
+	{
+		width: 300px;
+	}	
+	
+	#filterByRadiusSection
+	{ 
+		height: 800px; 
+		width: 900px;
+		padding: 10px;
+	}
+	
+	#radiusFilterWrapper
+	{
+		margin: 0px auto;
+		height: 780px; 
+		width: 850px;
+		margin-top: 20px;
+	}
+	
+	#radiusFilterWrapper > form
+	{
+		width: 380px;
+		height: 34px;
+		font-size: 12px;
+	}
+	
+	#radiusSelectorSection
+	{
+		float: right;
+	}
+	
+	#radiusSelectorSection > .slider
+	{
+		width: 200px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 3px;
+	}
+	
+	#mapWrapper 
+	{
+		height: 650px; 
+		width: 850px;
+		border: 2px solid #FFFFFF;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		
+	
+	/******************************************************************************************/
+	/********************************** RESTAURANT ELEMENT ************************************/
+	/******************************************************************************************/
+	
+	.restaurantSection
+	{
+	    height: 234px;
+	}
+	
+	.restaurantAddress
+	{
+	    font-size: 12px;
+	}
+	
+	.websiteLinkBtn
+	{
+	    left: 854px;
+	    top: 13px;
+	}
+	
+	.shareBtn
+	{
+	    left: 904px;
+	    top: 13px;
+	}
+	
+	.addToWishlistBtn
+	{
+	    left: 954px;
+	    top: 13px;
+	}
+	
+	.totalRatingScore
+	{
+	    left: 18px;
+	    top: 58px; 
+	}
+	
+	.sadBtn
+	{
+	    left: 14px;
+	    top: 155px;
+	}
+	
+	.happyBtn
+	{
+	    left: 88px;
+	    top: 155px;
+	}
+	
+	.likesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 95px;
+	}
+	
+	.dislikesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 23px;
+	}
+	
+	.advancedRatingArea
+	{
+	    position: absolute;
+	    width: 250px;
+	    left: 160px;
+	    top: 58px;
+	}
+	
+	.advancedRatingVal
+	{
+		float: left;
+	}
+	
+	.foodRatingBar
+	{
+	    margin-left: 60px;
+	    margin-right: 20px;
+	    width: 80px;
+	    height: 15px;
+	}
+	
+	.serviceRatingBar
+	{
+	    margin-left: 45px;
+	    margin-right: 20px;
+	    width: 80px;
+	    height: 15px;
+	}
+	
+	.priceRatingBar
+	{
+	    margin-left: 61px;
+	    margin-right: 20px;
+	    width: 80px;
+	    height: 15px;
+	}
+	
+	.atmosphereRatingBar
+	{
+	    margin-left: 10px;
+	    margin-right: 20px;
+	    width: 80px;
+	    height: 15px;
+	}
+	
+	.restaurantCuisines
+	{
+	    position: absolute;
+	    top: 205px;
+	    left: 160px;
+	}
+	
+	.userPhotos
+	{
+	    position: absolute;
+	    height: 120px;
+	    width: 260px;
+	    top: 58px;
+	    left: 500px;
+	    background-position: center;
+		background-size: cover;
+		border: 3px solid #FFF7EA;
+	}
+	
+	.rateBtnSection
+	{
+	    position: absolute;
+	    width: 100px;
+	    top: 58px;
+	    left: 866px;
+	    text-align: center;
+	}	
+	
+	/*****************************************************************************************/
+	/*********************************** RESTAURANT PAGE *************************************/
+	/*****************************************************************************************/
+	
+	#restaurantInfo .dividerThin
+	{
+		display: none;
+	}
+	
+	.userReviewSection
+	{
+	    width: 100%;
+	    font-size: 12px;
+	}
+	
+	.userReviewSection > .well
+	{
+	    width: 600px;
+	    margin-top: 20px;
+	}
+	
+	.reviewerDetails
+	{
+	    width: 200px;
+	    padding: 20px;	    
+	}
+	
+	.ratingScoreSection
+	{
+	    margin-left: 20px;
+	    margin-bottom: 20px;
+	}
+	
+	.reviewRatingScore
+	{
+	    width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 18px;
+	}
+		
+	/*************************************************************************************/
+	/*********************************** RATING PAGE *************************************/
+	/*************************************************************************************/
+	
+	#restaurantTitleSection
+	{
+	    height: 50px;
+	}
+	
+	.ratingSection
+	{
+	    height: 100px;
+	    width: 950px;
+	    margin: 0px auto;
+	}
+	
+	.ratingAreaLabel
+	{
+	   	position: absolute;
+	    top: 10px;
+	}
+	
+	.advancedRatingLabel
+	{
+		position: absolute;
+		left: 50%;
+	    margin-left: -380px;
+	    top: 50%;
+	    margin-top: -4px;
+	}
+	
+	.badRatingBtn
+	{
+	    left: 50%;
+	    margin-left: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.goodRatingBtn
+	{
+	    right: 50%;
+	    margin-right: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.ratingSection > .slider
+	{
+		position: absolute;
+	    width: 400px;
+	    top: 50%;
+	    margin-top: -5px;
+	    left: 50%;
+	    margin-left: -200px;
+		height: 20px;
+		border: 0;
+	}
+	
+	.ratingSection > .slider .ui-slider-handle
+	{
+		border: 0;
+		height: 30px;
+    	width: 20px;
+	}
+	
+	.ratingSection > .slider .ui-slider-range
+	{
+		background: #F0AD4E;
+	}
+	
+	.ratingResult
+	{
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -25px;
+	    right: 95px;
+	    text-align: center;
+    	border: 2px solid;
+    	border-radius: 50%;
+    	opacity: 0.8;
+    	width: 48px;
+	    height: 48px;
+	    line-height: 48px;
+	    font-size: 16px;
+	    background: none;
+	}
+	
+	#overallRatingValue
+	{
+		right: 92px;
+    	width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 20px;
+	}
+	
+	.reviewArea
+	{
+		height: 200px;	
+	}
+	
+	.reviewArea > textarea
+	{
+	    position: absolute;
+	    resize: none;
+	    top: 35px;
+	    left: 50%;
+	    margin-left: -380px;
+	    width: 760px;
+	    height: 133px;
+	}
+	
+	.photo
+	{
+	    position: absolute;
+	    top: 60px;
+	    width: 100px;
+	    height: 100px;
+	    left: 85px;
+	    opacity: 0.8;
+	}
+	
+	.submitBtn
+	{
+	    position: absolute;
+	    top: 35px;
+	    left: 50%;
+	    margin-left: -40px;
+	}
+	
+	/*****************************************************************************************/
+	/************************************ PERSONAL PAGE **************************************/
+	/*****************************************************************************************/
+	
+	.recommendedSection
+	{
+		width: 100%;
+		height: 150px;
+		padding-top: 15px;
+	}
+	
+	.recommendedSection .btn
+	{
+		float: left;
+		background: url(../images/glass_btn.png) no-repeat center center;
+		height: 120px;
+		width: 200px;
+		margin-left: 40px;
+		padding-left: 25px;
+		padding-top: 20px;
+	}
+	
+	.recommendedSection .btn .filterSortBtn
+	{
+		float: left;
+	}
+	
+	
+	/*****************************************************************************************/
+	/************************************ LOG IN PAGE ****************************************/
+	/*****************************************************************************************/
+	
+	#loginSection
+	{
+		width: 460px;
+		height: 325px;
+	}	
+	
+	.loginForm
+	{
+		width: 80%;
+		padding-top: 40px;
+	}
+	
+	.loginForm .glyphicon
+	{
+		opacity: 0.8;
+	}
+	
+	.loginForm .form-group
+	{
+		margin-bottom: 40px;
+	}
+	
+	/*****************************************************************************************/
+	/********************************* REGISTRATION PAGE *************************************/
+	/*****************************************************************************************/
+	
+	#loginSection.registration
+	{
+		height: 380px;
+	}
+}
+
+
+
+
+
+
+
+
+/**************************************************************************  MOBILE  ************************************************************************************************/
+@media only screen and (max-width:480px)
+{
+	
+	/************************************************************************************/
+	/********************************** GENERAL TAGS ************************************/
+	/************************************************************************************/
+	
+	#wrapper
+	{
+		width: 360px;
+	}
+	
+	header
+	{	
+		height: 60px;
+		padding: 5px;
+	}
+	
+	footer
+	{
+	    height: 90px;
+	}
+	
+	.logo
+	{
+		width: 50px;
+		height: 50px;
+		margin: 0px auto;
+	}
+	
+	footer > .logo
+	{
+	    width: 25px;
+		height: 25px;
+		margin: 0px auto;
+	}
+	
+	footer .dividerThin
+	{
+	    margin: 0px auto;
+	    margin-top: 10px;
+	    margin-bottom: 5px;
+	}
+	
+	#footerLinks
+	{
+		width: 100%;
+	    text-align: center;
+	}
+	
+	#footerLinks > a
+	{
+	    font-size: 9px;
+	}
+	
+	#footerRightsLabel
+	{
+		width: 100%;
+	    text-align: center;
+	    font-size: 8px;
+	}
+	
+	header > .glyphicon-menu-hamburger
+	{
+		display: inherit;
+		opacity: 0.9;
+		color: #FFFFFF;
+		font-size: 28px;
+		text-decoration: none;
+		width: 30px;
+		height: 30px;
+		padding-top: 10px;
+		padding-left: 10px;
+		float: left;
+	}
+	
+	header > form 
+	{
+		display: none;
+	}
+	
+	.searchButton
+	{
+		display: none;
+	}
+	
+	#connectedUserArea
+	{
+		visibility: hidden;
+	}
+	
+	#loginNavSection
+	{
+		visibility: hidden;
+	}
+	
+	.pagination
+	{
+		visibility: hidden;
+	}
+	
+	/*********************************************************************************/
+	/********************************** MAIN PAGE ************************************/
+	/*********************************************************************************/
+	
+	main > form
+	{
+		height: 50px;
+		width: 98%;
+		padding-top: 7px;
+		padding-left: 10px;
+	}
+	
+	.titleBar
+	{
+	    height: 50px;
+	    font-size: 22px;
+	    padding-left: 10px;
+	    padding-top: 12px;
+	}
+
+	#cuisineSelector > .dropdown-menu
+	{
+		width: 200px;
+	}
+		
+	#filterByRadiusSection
+	{ 
+		height: 490px; 
+		width: 300px;
+		padding: 5px;
+	}
+	
+	#radiusFilterWrapper
+	{
+		margin: 0px auto;
+		height: 350px; 
+		width: 250px;
+		margin-top: 10px;
+	}
+	
+	#radiusFilterWrapper > form
+	{
+		width: 100%;
+		height: 34px;
+	}
+	
+	#radiusFilterWrapper .form-control
+	{
+		font-size: 10px;
+	}
+	
+	#radiusSelectorSection
+	{
+		clear: both;
+	}
+	
+	#radiusSelectorSection > .slider
+	{
+		width: 120px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+	
+	#mapWrapper 
+	{
+		height: 320px; 
+		width: 250px;
+		border: 2px solid #FFFFFF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	#sortMenuBtnLabel
+	{
+		display: none;
+	}	
+	
+	/******************************************************************************************/
+	/*************************** RESTAURANT ELEMENT - MAIN PAGE *******************************/
+	/******************************************************************************************/
+	
+	.restaurantSection
+	{
+	    height: 220px;
+	}
+	
+	.restaurantAddress
+	{
+	    font-size: 10px;
+	}
+	
+	.websiteLinkBtn
+	{
+	    display: none;
+	}
+	
+	.shareBtn
+	{
+		display: none;
+	}
+	
+	.addToWishlistBtn
+	{
+	    display: none;
+	}
+	
+	.totalRatingScore
+	{
+	    left: 10px;
+	    top: 58px; 
+	}	
+	
+	.sadBtn
+	{
+	    left: 6px;
+	    top: 155px;
+	}
+	
+	.happyBtn
+	{
+	    left: 80px;
+	    top: 155px;
+	}
+	
+	.likesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 87px;
+	}
+	
+	.dislikesLabel
+	{
+	    position: absolute;
+	    top: 185px;
+	    left: 15px;
+	}
+	
+	.advancedRatingArea
+	{
+	    position: absolute;
+	    width: 120px;
+	    left: 121px;
+	    top: 58px;
+	    font-size: 12px;
+	    line-height: 21px;
+	}
+	
+	.advancedRatingVal
+	{
+		float: right;
+	}
+	
+	.foodRatingBar
+	{
+	    display: none;
+	}
+	
+	.serviceRatingBar
+	{
+	    display: none;
+	}
+	
+	.priceRatingBar
+	{
+	    display: none;
+	}
+	
+	.atmosphereRatingBar
+	{
+	    display: none;
+	}
+	
+	.restaurantCuisines
+	{
+	    display: none;
+	}
+	
+	.userPhotos
+	{
+	    display: none;   
+	}
+	
+	.rateBtnSection
+	{
+	    position: absolute;
+	    width: 100px;
+	    top: 58px;
+	    left: 252px;
+	    text-align: center;
+	}
+	
+	/******************************************************************************************/
+	/************************ RESTAURANT ELEMENT - RESTAURANT PAGE ****************************/
+	/******************************************************************************************/
+	
+	#restaurantInfo > .restaurantSection
+	{
+	    height: 475px;
+	}
+	
+	#restaurantInfo .websiteLinkBtn
+	{
+		position: absolute;
+	    display: inherit;
+	    left: 74px;
+	    top: 260px;
+	}
+	
+	#restaurantInfo .shareBtn
+	{
+		position: absolute;
+		display: inherit;
+		left: 174px;
+		top: 260px;
+	}
+	
+	#restaurantInfo .addToWishlistBtn
+	{
+		position: absolute;
+	    display: inherit;
+	    left: 274px;
+	    top: 260px;
+	}
+	
+	#restaurantInfo .totalRatingScore
+	{
+	    top: 318px; 
+	}	
+	
+	#restaurantInfo .sadBtn
+	{
+	    top: 415px;
+	}
+	
+	#restaurantInfo .happyBtn
+	{
+	    top: 415px;
+	}
+	
+	#restaurantInfo .likesLabel
+	{
+	    top: 445px;
+	}
+	
+	#restaurantInfo .dislikesLabel
+	{
+	    top: 445px;
+	}
+	
+	#restaurantInfo .advancedRatingArea
+	{
+	    top: 318px;
+	}
+	
+	#restaurantInfo .userPhotos
+	{
+		position: absolute;
+	    display: inherit;
+	    height: 193px;
+	    width: 340px;
+	    background-position: center;
+		background-size: cover;
+	    top: 58px;
+	    left: 10px;  
+	}
+	
+	#restaurantInfo .rateBtnSection
+	{
+	    top: 318px;
+	}
+	
+	#restaurantInfo .dividerThin
+	{
+		position: absolute;
+		top: 360px;
+	    left: 50%;
+	    margin-left: -170px;
+	}
+	
+	
+	
+	/*****************************************************************************************/
+	/*********************************** RESTAURANT PAGE *************************************/
+	/*****************************************************************************************/
+	
+	.userReviewSection
+	{
+	    width: 100%;
+	    font-size: 12px;
+	    padding-bottom: 20px;
+	}
+	
+	.reviewerDetails
+	{
+	    padding: 20px;    
+	}
+	
+	.reviewerDetails > .img-circle
+	{
+		float: left;
+		margin-right: 10px;
+	}
+	
+	.userReviewSection > .well
+	{
+		float: none;
+		clear: both;
+	    width: 340px;
+	    margin: 0px auto;
+	}
+		
+	.userReviewSection > .well > .ratingScoreSection:first-child
+	{
+		display: inherit;
+	}
+	
+	.ratingScoreSection
+	{
+		display: none;
+	}
+	
+	.ratingScoreSection > label:last-child
+	{
+		display: none;
+	}
+		
+	.reviewRatingScore
+	{
+	    width: 48px;
+	    height: 48px;
+	    text-align: center;
+	    line-height: 48px;
+	    font-size: 16px;
+	}
+	
+	/*************************************************************************************/
+	/*********************************** RATING PAGE *************************************/
+	/*************************************************************************************/
+	
+	#restaurantTitleSection
+	{
+	    height: 50px;
+	}
+	
+	.ratingSection
+	{
+		left: 10px;
+	    height: 80px;
+	    width: 350px;
+	    
+	}
+	
+	.ratingAreaLabel
+	{
+	   	position: absolute;
+	    top: 10px;
+	}
+	
+	.advancedRatingLabel
+	{
+		position: absolute;
+		left: 50%;
+	    margin-left: -380px;
+	    top: 50%;
+	    margin-top: -4px;
+	}
+	
+	.badRatingBtn
+	{
+	   	top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.goodRatingBtn
+	{
+	    right: 50%;
+	    margin-right: -95px;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.ratingSection > .slider
+	{
+		position: absolute;
+	    width: 180px;
+	    top: 50%;
+	    left: 45px;
+		height: 15px;
+		border: 0;
+	}
+	
+	.ratingSection > .slider .ui-slider-handle
+	{
+		border: 0;
+		height: 25px;
+    	width: 15px;
+	}
+	
+	.ratingSection > .slider .ui-slider-range
+	{
+		background: #F0AD4E;
+	}
+	
+	.ratingResult
+	{
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -18px;
+	    right: 15px;
+	    text-align: center;
+    	border: 2px solid;
+    	border-radius: 50%;
+    	opacity: 0.8;
+    	width: 48px;
+	    height: 48px;
+	    line-height: 48px;
+	    font-size: 16px;
+	    background: none;
+	}
+	
+	#overallRatingValue
+	{
+		right: 12px;
+		top: 50%;
+	    margin-top: -22px;
+    	width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 20px;
+	}
+	
+	.reviewArea
+	{
+		height: 200px;	
+	}
+	
+	.reviewArea > textarea
+	{
+	    position: absolute;
+	    resize: none;
+	    top: 35px;
+	    width: 340px;
+	    height: 133px;
+	}
+	
+	.photo
+	{
+	    position: absolute;
+	    top: 60px;
+	    width: 100px;
+	    height: 100px;
+	    left: 50%;
+	    margin-left: -50px;
+	    opacity: 0.8;
+	}
+	
+	.submitBtn
+	{
+	    position: absolute;
+	    top: 35px;
+	    left: 50%;
+	    margin-left: -40px;
+	}
+
+
+	/*****************************************************************************************/
+	/************************************ PERSONAL PAGE **************************************/
+	/*****************************************************************************************/
+	
+	.recommendedSection
+	{
+		width: 100%;
+		height: 300px;
+		padding-top: 15px;
+		padding-left: 20px;
+	}
+	
+	.recommendedSection .btn
+	{
+		background: url(../images/glass_btn.png) no-repeat center center;
+		height: 120px;
+		width: 135px;
+		margin: 5px;
+	}
+	
+	.titleBar > h2
+	{
+		padding: 3px;
+	}
+	
+	.titleBar > h2
+	{
+		font-size: 20px;
+	}
+
+
+
+	/*****************************************************************************************/
+	/************************************ LOG IN PAGE ****************************************/
+	/*****************************************************************************************/
+	
+	#loginSection
+	{
+		width: 320px;
+		height: 260px;
+	}	
+	
+	.loginForm
+	{
+		width: 80%;
+		padding-top: 30px;
+	}
+	
+	.loginForm .glyphicon
+	{
+		opacity: 0.8;
+	}
+	
+	.loginForm .form-group
+	{
+		margin-bottom: 30px;
+	}
+	
+	.loginForm .btn-link
+	{
+		font-size: 13px; 
+	}
+	
+	/*****************************************************************************************/
+	/********************************* REGISTRATION PAGE *************************************/
+	/*****************************************************************************************/
+	
+	#loginSection.registration
+	{
+		height: 325px;
+	}
+
 }
 
