@@ -10,7 +10,7 @@
 		<link href="includes/style_mobile.css" rel="stylesheet" />
 		<link href="includes/style_desktop.css" rel="stylesheet" />
 		
-		<script src="includes/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script src="includes/generalFunctions.js"></script>
 		<script src="includes/restaurant.js"></script>
@@ -50,123 +50,125 @@
                     <label>User Reviews</label>
                 </section>
                 
-                <section id="userReviewSection">
-                    <section id="reviewerDetails" class="left">
-                        <section class="img-circle" id="userImg2"></section>
-                        <label>Tamar, L.</label><br>
-                        <label>23/12/14</label>
-                    </section>
-                    <section class="well left">
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">9.5</label>
-                            <div class="clear"></div>
-                            <label>Total</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">9.5</label>
-                            <div class="clear"></div>
-                            <label>Food</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">9.5</label>
-                            <div class="clear"></div>
-                            <label>Service</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">9.5</label>
-                            <div class="clear"></div>
-                            <label>Price</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">9.5</label>
-                            <div class="clear"></div>
-                            <label>Atmosphere</label>
-                        </section>
-                        <div class="clear"></div>
-                        <label>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam."</label>
-                    </section>
-                </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
-                
-                <section id="userReviewSection">
-                    <section id="reviewerDetails" class="left">
-                        <section class="img-circle" id="userImg3"></section>
-                        <label>John, .</label><br>
-                        <label>20/12/14</label>
-                    </section>
-                    <section class="well left">
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">10</label>
-                            <div class="clear"></div>
-                            <label>Total</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">10</label>
-                            <div class="clear"></div>
-                            <label>Food</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">10</label>
-                            <div class="clear"></div>
-                            <label>Service</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">10</label>
-                            <div class="clear"></div>
-                            <label>Price</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">10</label>
-                            <div class="clear"></div>
-                            <label>Atmosphere</label>
-                        </section>
-                        <div class="clear"></div>
-                        <label>"Perfect!"</label>
-                    </section>
-                </section>
-                <ul class="nav nav-list">
-                    <li class="divider" id="dividerThin"></li>
-                </ul>
-                
-                <section id="userReviewSection">
-                    <section id="reviewerDetails" class="left">
-                        <section class="img-circle" id="userImg4"></section>
-                        <label>Jack, R.</label><br>
-                        <label>01/12/14</label>
-                    </section>
-                    <section class="well left">
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">5.0</label>
-                            <div class="clear"></div>
-                            <label>Total</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">5.0</label>
-                            <div class="clear"></div>
-                            <label>Food</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">5.0</label>
-                            <div class="clear"></div>
-                            <label>Service</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">5.0</label>
-                            <div class="clear"></div>
-                            <label>Price</label>
-                        </section>
-                        <section class="ratingScoreSection left">
-                            <label class="reviewRatingScore">5.0</label>
-                            <div class="clear"></div>
-                            <label>Atmosphere</label>
-                        </section>
-                        <div class="clear"></div>
-                        <label>"Not recommended."</label>
-                    </section>
-                </section>                
-             
+                <ul id="userReviewsList">
+	                <li class="userReviewSection">
+	                    <section class="reviewerDetails left">
+	                        <section class="img-circle userImg2"></section>
+	                        <section class="left">
+	                        	<label>Tamar, L.</label><br>
+	                        	<label>23/12/14</label>
+	                        </section>
+	                    </section>
+	                    <section class="well left">
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">9.5</label>
+	                            <div class="clear"></div>
+	                            <label>Total</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">9.5</label>
+	                            <div class="clear"></div>
+	                            <label>Food</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">9.5</label>
+	                            <div class="clear"></div>
+	                            <label>Service</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">9.5</label>
+	                            <div class="clear"></div>
+	                            <label>Price</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">9.5</label>
+	                            <div class="clear"></div>
+	                            <label>Atmosphere</label>
+	                        </section>
+	                        <div class="clear"></div>
+	                        <label>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam."</label>
+	                    </section>
+	                </li>
+	                <div class="clear"></div>
+	                <li class="divider dividerThin"></li>	                
+	                
+	                <li class="userReviewSection">
+	                    <section class="reviewerDetails left">
+	                        <section class="img-circle userImg3"></section>
+	                        <label>John, C.</label><br>
+	                        <label>20/12/14</label>
+	                    </section>
+	                    <section class="well left">
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">10</label>
+	                            <div class="clear"></div>
+	                            <label>Total</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">10</label>
+	                            <div class="clear"></div>
+	                            <label>Food</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">10</label>
+	                            <div class="clear"></div>
+	                            <label>Service</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">10</label>
+	                            <div class="clear"></div>
+	                            <label>Price</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">10</label>
+	                            <div class="clear"></div>
+	                            <label>Atmosphere</label>
+	                        </section>
+	                        <div class="clear"></div>
+	                        <label>"Perfect!"</label>
+	                    </section>
+	                </li>
+	                <div class="clear"></div>
+	                <li class="divider dividerThin"></li>
+	                                
+	                <li class="userReviewSection">
+	                    <section class="reviewerDetails left">
+	                        <section class="img-circle userImg4"></section>
+	                        <label>Jack, R.</label><br>
+	                        <label>01/12/14</label>
+	                    </section>
+	                    <section class="well left">
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">5.0</label>
+	                            <div class="clear"></div>
+	                            <label>Total</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">5.0</label>
+	                            <div class="clear"></div>
+	                            <label>Food</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">5.0</label>
+	                            <div class="clear"></div>
+	                            <label>Service</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">5.0</label>
+	                            <div class="clear"></div>
+	                            <label>Price</label>
+	                        </section>
+	                        <section class="ratingScoreSection left">
+	                            <label class="reviewRatingScore">5.0</label>
+	                            <div class="clear"></div>
+	                            <label>Atmosphere</label>
+	                        </section>
+	                        <div class="clear"></div>
+	                        <label>"Not recommended."</label>
+	                    </section>
+	                </li>
+	                <div class="clear"></div>
+                </ul>              
 			</main>
 			
             

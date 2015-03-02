@@ -40,8 +40,6 @@
 	
 	footer .dividerThin
 	{
-	    height: 1px;
-	    width: 97%;
 	    margin: 0px auto;
 	    margin-top: 10px;
 	    margin-bottom: 5px;
@@ -166,7 +164,7 @@
 		float: right;
 	}
 	
-	#slider
+	#radiusSelectorSection > .slider
 	{
 		width: 200px;
 		margin-left: 20px;
@@ -319,15 +317,7 @@
 	    top: 58px;
 	    left: 866px;
 	    text-align: center;
-	}
-	
-	.dividerThin
-	{
-	    height: 2px;
-	    width: 97%;
-	}
-	
-	
+	}	
 	
 	/*****************************************************************************************/
 	/*********************************** RESTAURANT PAGE *************************************/
@@ -338,25 +328,22 @@
 		display: none;
 	}
 	
-	#userReviewSection
+	.userReviewSection
 	{
-	    height: 270px;
 	    width: 100%;
-	    font-family: 'Cinzel', serif;
 	    font-size: 12px;
 	}
 	
-	#userReviewSection > .well
+	.userReviewSection > .well
 	{
 	    width: 600px;
 	    margin-top: 20px;
 	}
 	
-	#reviewerDetails
+	.reviewerDetails
 	{
 	    width: 200px;
-	    padding: 20px;
-	    
+	    padding: 20px;	    
 	}
 	
 	.ratingScoreSection
@@ -372,23 +359,18 @@
 	    line-height: 55px;
 	    font-size: 18px;
 	}
-	
-	
+		
 	/*************************************************************************************/
 	/*********************************** RATING PAGE *************************************/
 	/*************************************************************************************/
 	
 	#restaurantTitleSection
 	{
-	    position: relative;
 	    height: 50px;
-	    font-family: 'Cinzel', serif;
 	}
 	
 	.ratingSection
 	{
-	    font-family: 'Cinzel', serif;
-	    position: relative;
 	    height: 100px;
 	    width: 950px;
 	    margin: 0px auto;
@@ -400,40 +382,53 @@
 	    top: 10px;
 	}
 	
-	.ratingBarSection
+	.advancedRatingLabel
 	{
-	    position: absolute;
+		position: absolute;
+		left: 50%;
+	    margin-left: -380px;
+	    top: 50%;
+	    margin-top: -4px;
+	}
+	
+	.badRatingBtn
+	{
+	    left: 50%;
+	    margin-left: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.goodRatingBtn
+	{
+	    right: 50%;
+	    margin-right: -250px;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+	
+	.ratingSection > .slider
+	{
+		position: absolute;
 	    width: 400px;
 	    top: 50%;
 	    margin-top: -5px;
 	    left: 50%;
 	    margin-left: -200px;
+		height: 20px;
+		border: 0;
 	}
 	
-	#badRatingBtn
+	.ratingSection > .slider .ui-slider-handle
 	{
-	    position: absolute;
-	    background: url(../images/sad44.png) no-repeat center center;
-	    left: 50%;
-	    margin-left: -250px;
-	    top: 50%;
-	    margin-top: -10px;
-	    width: 32px;
-	    height: 32px;
-	    opacity: 0.8;
+		border: 0;
+		height: 30px;
+    	width: 20px;
 	}
 	
-	#goodRatingBtn
+	.ratingSection > .slider .ui-slider-range
 	{
-	    position: absolute;
-	    background: url(../images/happy.png) no-repeat center center;
-	    right: 50%;
-	    margin-right: -250px;
-	    top: 50%;
-	    margin-top: -10px;
-	    width: 32px;
-	    height: 32px;
-	    opacity: 0.8;
+		background: #F0AD4E;
 	}
 	
 	.ratingResult
@@ -441,23 +436,51 @@
 	    position: absolute;
 	    top: 50%;
 	    margin-top: -25px;
-	    right: 50px;
+	    right: 95px;
+	    text-align: center;
+    	border: 2px solid;
+    	border-radius: 50%;
+    	opacity: 0.8;
+    	width: 48px;
+	    height: 48px;
+	    line-height: 48px;
+	    font-size: 16px;
+	    background: none;
+	}
+	
+	#overallRatingValue
+	{
+		right: 92px;
+    	width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 20px;
 	}
 	
 	.reviewArea
 	{
+		height: 200px;	
+	}
+	
+	.reviewArea > textarea
+	{
 	    position: absolute;
+	    resize: none;
 	    top: 35px;
-	    width: 80%;
-	    height: 100px;
+	    left: 50%;
+	    margin-left: -380px;
+	    width: 760px;
+	    height: 133px;
 	}
 	
 	.photo
 	{
 	    position: absolute;
-	    top: 35px;
-	    width: 90px;
-	    left: 100px;
+	    top: 60px;
+	    width: 100px;
+	    height: 100px;
+	    left: 85px;
+	    opacity: 0.8;
 	}
 	
 	.submitBtn
@@ -465,5 +488,6 @@
 	    position: absolute;
 	    top: 35px;
 	    left: 50%;
+	    margin-left: -40px;
 	}
 }

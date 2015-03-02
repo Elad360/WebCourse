@@ -39,8 +39,6 @@
 	
 	footer .dividerThin
 	{
-	    height: 1px;
-	    width: 97%;
 	    margin: 0px auto;
 	    margin-top: 10px;
 	    margin-bottom: 5px;
@@ -138,7 +136,7 @@
 		clear: both;
 	}
 	
-	#slider
+	#radiusSelectorSection > .slider
 	{
 		width: 120px;
 		margin-left: 10px;
@@ -275,14 +273,6 @@
 	    text-align: center;
 	}
 	
-	.dividerThin
-	{
-	    height: 1px;
-	    width: 90%;
-	}
-	
-	
-	
 	/******************************************************************************************/
 	/************************ RESTAURANT ELEMENT - RESTAURANT PAGE ****************************/
 	/******************************************************************************************/
@@ -367,8 +357,6 @@
 	{
 		position: absolute;
 		top: 360px;
-	    height: 1px;
-	    width: 340px;
 	    left: 50%;
 	    margin-left: -170px;
 	}
@@ -379,28 +367,33 @@
 	/*********************************** RESTAURANT PAGE *************************************/
 	/*****************************************************************************************/
 	
-	#userReviewSection
+	.userReviewSection
 	{
-	    height: 270px;
 	    width: 100%;
-	    font-family: 'Cinzel', serif;
 	    font-size: 12px;
+	    padding-bottom: 20px;
 	}
 	
-	#userReviewSection > .well
+	.reviewerDetails
 	{
-	    width: 300px;
-	    margin-top: 20px;
+	    padding: 20px;    
 	}
 	
-	#reviewerDetails
+	.reviewerDetails > .img-circle
 	{
-	    width: 200px;
-	    padding: 20px;
-	    
+		float: left;
+		margin-right: 10px;
 	}
 	
-	#userReviewSection > .well > .ratingScoreSection:first-child
+	.userReviewSection > .well
+	{
+		float: none;
+		clear: both;
+	    width: 340px;
+	    margin: 0px auto;
+	}
+		
+	.userReviewSection > .well > .ratingScoreSection:first-child
 	{
 		display: inherit;
 	}
@@ -410,18 +403,19 @@
 		display: none;
 	}
 	
+	.ratingScoreSection > label:last-child
+	{
+		display: none;
+	}
+		
 	.reviewRatingScore
 	{
-	    width: 55px;
-	    height: 55px;
+	    width: 48px;
+	    height: 48px;
 	    text-align: center;
-	    line-height: 55px;
-	    font-size: 18px;
-	    border: 2px solid;
-	    border-radius: 50%;
-	    opacity: 0.8;
+	    line-height: 48px;
+	    font-size: 16px;
 	}
-	
 	
 	/*************************************************************************************/
 	/*********************************** RATING PAGE *************************************/
@@ -429,18 +423,15 @@
 	
 	#restaurantTitleSection
 	{
-	    position: relative;
 	    height: 50px;
-	    font-family: 'Cinzel', serif;
 	}
 	
 	.ratingSection
 	{
-	    font-family: 'Cinzel', serif;
-	    position: relative;
-	    height: 100px;
-	    width: 950px;
-	    margin: 0px auto;
+		left: 15px;
+	    height: 80px;
+	    width: 350px;
+	    
 	}
 	
 	.ratingAreaLabel
@@ -449,64 +440,100 @@
 	    top: 10px;
 	}
 	
-	.ratingBarSection
+	.advancedRatingLabel
 	{
-	    position: absolute;
-	    width: 400px;
+		position: absolute;
+		left: 50%;
+	    margin-left: -380px;
 	    top: 50%;
-	    margin-top: -5px;
-	    left: 50%;
-	    margin-left: -200px;
+	    margin-top: -4px;
 	}
 	
-	#badRatingBtn
+	.badRatingBtn
 	{
-	    position: absolute;
-	    background: url(../images/sad44.png) no-repeat center center;
-	    left: 50%;
-	    margin-left: -250px;
-	    top: 50%;
+	   	top: 50%;
 	    margin-top: -10px;
-	    width: 32px;
-	    height: 32px;
-	    opacity: 0.8;
 	}
 	
-	#goodRatingBtn
+	.goodRatingBtn
 	{
-	    position: absolute;
-	    background: url(../images/happy.png) no-repeat center center;
 	    right: 50%;
-	    margin-right: -250px;
+	    margin-right: -95px;
 	    top: 50%;
 	    margin-top: -10px;
-	    width: 32px;
-	    height: 32px;
-	    opacity: 0.8;
+	}
+	
+	.ratingSection > .slider
+	{
+		position: absolute;
+	    width: 180px;
+	    top: 50%;
+	    left: 45px;
+		height: 15px;
+		border: 0;
+	}
+	
+	.ratingSection > .slider .ui-slider-handle
+	{
+		border: 0;
+		height: 25px;
+    	width: 15px;
+	}
+	
+	.ratingSection > .slider .ui-slider-range
+	{
+		background: #F0AD4E;
 	}
 	
 	.ratingResult
 	{
 	    position: absolute;
 	    top: 50%;
-	    margin-top: -25px;
-	    right: 50px;
+	    margin-top: -18px;
+	    right: 5px;
+	    text-align: center;
+    	border: 2px solid;
+    	border-radius: 50%;
+    	opacity: 0.8;
+    	width: 48px;
+	    height: 48px;
+	    line-height: 48px;
+	    font-size: 16px;
+	    background: none;
+	}
+	
+	#overallRatingValue
+	{
+		right: 0px;
+    	width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 20px;
 	}
 	
 	.reviewArea
 	{
+		height: 200px;	
+	}
+	
+	.reviewArea > textarea
+	{
 	    position: absolute;
+	    resize: none;
 	    top: 35px;
-	    width: 80%;
-	    height: 100px;
+	    width: 350px;
+	    height: 133px;
 	}
 	
 	.photo
 	{
 	    position: absolute;
-	    top: 35px;
-	    width: 90px;
-	    left: 100px;
+	    top: 60px;
+	    width: 100px;
+	    height: 100px;
+	    left: 50%;
+	    margin-left: -50px;
+	    opacity: 0.8;
 	}
 	
 	.submitBtn
@@ -514,5 +541,6 @@
 	    position: absolute;
 	    top: 35px;
 	    left: 50%;
+	    margin-left: -40px;
 	}
 }

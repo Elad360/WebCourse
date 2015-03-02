@@ -110,7 +110,7 @@ $(document).ready(function(){
 	
 	
 	$(function() {
-		$( "#slider" ).slider({
+		$( "#radiusSlider" ).slider({
 			value: 2,
 			min: 1,
 			max: 20,
@@ -120,7 +120,7 @@ $(document).ready(function(){
 			}
 		});
 		
-		$( "#radiusValue" ).val( $( "#slider" ).slider( "value" ) + "km" );
+		$( "#radiusValue" ).val( $( "#radiusSlider" ).slider( "value" ) + "km" );
 	});
 	
 });
